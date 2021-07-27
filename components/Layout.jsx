@@ -17,8 +17,8 @@ const generateUrl = url => `${baseUrl}${url}`;
 const Layout = ({
   children,
   url,
-  title = 'Freelance Shopify Develer | WordPress Consultant | Rob Kendal',
-  description = 'Freelance Shopify developer and WordPress consultant who builds lead-generating websites with 15 years experience based in Selby, Yorkshire',
+  title = 'Headless WordPress specialist | Freelance WordPress Consultant | Rob Kendal',
+  description = 'Freelance headless WordPress developer and WordPress consultant who builds lead-generating websites on the Jamstack with 15 years experience based in Selby, Yorkshire',
   image = '/img/alt-logo.png'
 }) => {
 
