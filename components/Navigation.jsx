@@ -15,12 +15,12 @@ const Navigation = () => {
         <Link href='/about'>
           <a className={isActive('/about')}>about</a>
         </Link>
-        <Link href='/wordpress-consultancy'>
+        {/* <Link href='/wordpress-consultancy'>
           <a className={isActive('/wordpress-consultancy')}>WordPress</a>
-        </Link>
-        <Link href='/freelance-shopify-developer'>
+        </Link> */}
+        {/* <Link href='/freelance-shopify-developer'>
           <a className={isActive('/freelance-shopify-developer')}>Shopify</a>
-        </Link>
+        </Link> */}
         <Link href='/case-studies'>
           <a className={isActive('/case-studies')}>case studies</a>
         </Link>
@@ -58,9 +58,9 @@ const Navigation = () => {
             <Link href='/wordpress-consultancy'>
               <a className={isActive('/wordpress-consultancy')}>WordPress</a>
             </Link>
-            <Link href='/freelance-shopify-developer'>
+            {/* <Link href='/freelance-shopify-developer'>
               <a className={isActive('/freelance-shopify-developer')}>Shopify</a>
-            </Link>
+            </Link> */}
             <Link href='/case-studies'>
               <a className={isActive('/case-studies')}>case studies</a>
             </Link>

@@ -6,13 +6,15 @@ import ContactForm from '../../components/ContactForm';
 
 const caseStudyItems = [
   {
-    title: 'Stones4Homes',
+    id: 1,
+    title: 'Stones 4 Homes',
     subTitle: 'Ecommerce WordPress build',
     img: 'stones4homes-screenshot.png',
     blurb: 'I helped deliver a brand new website design for this Yorkshire aggregate powerhouse. The new site lifted transaction rates by 100% and conversions by 200%',
     link: 'stones4homes',
   },
   {
+    id: 2,
     title: 'CreateTVT',
     subTitle: 'Multisite theming',
     img: 'createtvt-screenshot.png',
@@ -20,6 +22,7 @@ const caseStudyItems = [
     link: 'createtvt',
   },
   {
+    id: 3,
     title: 'Sneyds Wonderdog',
     subTitle: 'Ecommerce WordPress build',
     img: 'sneyds-screenshot.png',
@@ -27,6 +30,7 @@ const caseStudyItems = [
     link: 'wonderdog',
   },
   {
+    id: 4,
     title: 'Andrea Hall',
     subTitle: 'Headless WordPress & Snipcart',
     img: 'andreahall-screenshot.png',
@@ -34,6 +38,7 @@ const caseStudyItems = [
     link: 'andrea-hall',
   },
   {
+    id: 5,
     title: 'Print Plus Direct',
     subTitle: 'Ecommerce WordPress build',
     img: 'printplusdirect-screenshot.png',
@@ -59,11 +64,11 @@ const CaseStudies = () => {
           </p>
         </div>
 
-          <div className="columns is-multiline section is-md">
+          <div className="columns is-multiline section">
             {
               caseStudyItems.map(item => (
-                  <div className="column is-6">
-                    <article className='card article-item'>
+                  <div className="column is-6-desktop is-12" key={item.id}>
+                    <article className='card article-item' style={{"box-shadow": "3px 3px 20px rgba(87, 87, 87, 0.24)"}}>
                       <div className='card-image'>
                         <Link href={`/case-studies/${item.link}`}>
                           <a>
