@@ -20,7 +20,7 @@ export default function Home({ allPostsData }) {
           <p>
             Hi, I'm Rob Kendal. If you've been searching for a{' '}
             <strong>
-              freelance web developer who knows Shopify, WordPress and frontend web
+              freelance web developer who knows the Jamstack, WordPress and frontend web
               development inside and out
             </strong>
             , you've come to the right place.
@@ -30,7 +30,7 @@ export default function Home({ allPostsData }) {
             <li className='flex has-padding-bottom-sm'>
               <span className='fa fa-thumbs-up has-text-secondary has-padding-right-sm'></span>
               <span>
-                A fullstack developer with 15+ years development experience.
+                A fullstack developer with 15+ years experience building fast, lead-generating websites.
               </span>
             </li>
             <li className='flex has-padding-bottom-sm'>
@@ -43,10 +43,11 @@ export default function Home({ allPostsData }) {
             <li className='flex has-padding-bottom-sm'>
               <span className='fa fa-thumbs-up has-text-secondary has-padding-right-sm'></span>
               <span>
-                A freelancer with expert skills in &nbsp;
-                <Link href="/freelance-shopify-developer">
-                  <a>Shopify development</a>
-                </Link> and &nbsp;
+                A freelancer with expert skills in &nbsp; 
+                <Link href="/headless-wordpress-websites">
+                  <a>headless content management websites</a>
+                </Link>                 
+                &nbsp; and &nbsp;
                 <Link href="/wordpress-consultancy">
                   <a>WordPress websites</a>
                 </Link> 
@@ -70,7 +71,7 @@ export default function Home({ allPostsData }) {
               <span className='fa fa-thumbs-up has-text-secondary has-padding-right-sm'></span>
               <span>
                 Expert web development services using forward-thinking
-                technologies such as Gatsby.js, Next.js, WordPress REST API,
+                technologies such as Frontity, Gatsby.js, Next.js, WordPress REST API,
                 GraphQL and the Jamstack.
               </span>
             </li>
@@ -121,16 +122,16 @@ export default function Home({ allPostsData }) {
       <section className='section is-secondary'>
         <h2 className='has-text-centered is-white'>How can I help?</h2>
         <p className='has-text-centered'>
-          As a freelance WordPress developer and freelance Shopify Partner, I can help build your next business website or ecommerce website
+          As a freelance WordPress developer and freelance front-end expert, I can help build your next business website or ecommerce website
         </p>
         <div className="columns is-centered home-service-blocks is-desktop">
           <div className="column">
             <ServiceBlockHome
-              title="Shopify development"
-              img="/img/shopify_logo_white.png"
+              title="Jamstack web development"
+              img="/img/Jamstack_Logo_White_Transparent.png"
               imgAlt="Shopify logo"
-              link="/freelance-shopify-developer"
-              blurb="As a Shopify Partner, I can help with ecommerce websites on Shopify, store migrations, Shopify theme development and more."
+              link="/headless-wordpress-websites"
+              blurb="I help build blazing fast, accessible &amp; beautiful websites using headless CMS's such as WordPress, using Jamstack technologies."
             />
           </div>
           <div className="column">
@@ -144,7 +145,7 @@ export default function Home({ allPostsData }) {
           </div>
           <div className="column">
             <ServiceBlockHome
-                title="Business websites"
+                title="Small business websites"
                 img="/img/react-logo-white-home.png"
                 imgAlt="React JS logo"
                 link="/small-business-websites"
@@ -221,7 +222,7 @@ export default function Home({ allPostsData }) {
             </div>
           </div>
           <div className="column is-12-tablet is-12-desktop is-6-widescreen is-6-fullhd message">
-            <img src="/img/wordpress-shopify-combined.png" alt="WordPress, Shopify and website logos" className="unstyled" />
+            <img src="/img/wordpress-jamstack-combined.png" alt="WordPress, Jamstack and website logos" className="unstyled" />
             <p>Your business website is key to getting your message in front of your customers.</p>
             <p>A good website should be built with your audience in mind, geared towards their needs and drivers with strong calls to action and properly thought-out UX.</p>
             <p>I can help your business build that website.</p>
