@@ -11,11 +11,6 @@ const Footer = () => (
     <h4 className='is-sr-only'>Site links</h4>
     <ul>
       <li>
-        <Link href='/'>
-          <a>freelance wordpress developer</a>
-        </Link>
-      </li>
-      <li>
         <Link href='/the-front-end-podcast'>
           <a>podcast</a>
         </Link>
@@ -43,6 +38,24 @@ const Footer = () => (
       <li>
         <Link href='/freelance-jamstack-developer'>
           <a>freelance Jamstack developer</a>
+        </Link>
+      </li>
+    </ul>
+
+    <ul>
+      <li>
+        <Link href='/wordpress-consultancy'>
+          <a>freelance WordPress developer</a>
+        </Link>
+      </li>
+      <li>
+        <Link href='/freelance-shopify-developer'>
+          <a>freelance Shopify developer</a>
+        </Link>
+      </li>
+      <li>
+        <Link href='/small-business-websites'>
+          <a>small business websites</a>
         </Link>
       </li>
     </ul>

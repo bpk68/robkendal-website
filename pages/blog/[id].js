@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { useEffect } from 'react';
+import Prism from 'prismjs';
 
 // components
 import Layout from '../../components/Layout';
@@ -17,6 +19,40 @@ import ctas from '../../lib/ctas';
 
 export default function Post({ postData, allRelatedPostsData }) {
   const ctaData = postData.cta ? ctas[postData.cta] : ctas.default;
+  const adHtml = `
+    <div
+        data-ea-publisher="robkendal-co-uk"
+        class="horizontal adaptive flat"
+        data-ea-type="image"
+        id="ea_text_id_${postData.id}"
+        data-ea-keywords="${postData.tags.join('|')}"
+        data-ea-manual="true"
+    />
+  `;
+
+  useEffect(() => {
+    // apply code syntax highlighting
+    Prism.highlightAll();
+
+    // add ethical ads display to loaded content
+    function applyAds() {
+      const articleContent = document.querySelector('#article-content .post-content');
+      const selectParagraph = articleContent.querySelectorAll('p')[3];
+
+      selectParagraph.insertAdjacentHTML("afterend", adHtml);
+
+      try {
+        if(ethicalads) {
+          ethicalads.load();
+        }  
+      } catch (error) {
+        // ethical ads not found
+      }      
+    }
+    window.addEventListener('load', applyAds);    
+
+    return () => window.removeEventListener('load', applyAds);
+  }, []);
 
   return (
     <Layout
@@ -26,19 +62,21 @@ export default function Post({ postData, allRelatedPostsData }) {
       url={`blog/${postData.id}`}
     >
       <>
-        <article className='container article'>
+        <article className='container article' id="article-content">          
           <div className='post-meta'>
             <DateDisplay
-              dateString={postData.date}
-              className='has-text-grey-light'
+                dateString={postData.date}
+                className='has-text-grey-light'
             />
             <h1>{postData.title}</h1>
           </div>
           <div
-            className='post-content'
-            dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
+              className='post-content'
+              dangerouslySetInnerHTML={{ __html: postData.contentHtml }}
           />
           <CallToAction {...ctaData} />
+        </article>
+        <div className="container">
           <div className='author-box section'>
             <div className='media is-small'>
               <div className='media-left'>
@@ -77,7 +115,7 @@ export default function Post({ postData, allRelatedPostsData }) {
               </div>
             </div>
           </div>
-        </article>
+        </div>
         <div className='container'>
           <Webmentions url={`blog/${postData.id}`} />
           <CommentsLoader pageUrl={postData.id} pageId={postData.id} />

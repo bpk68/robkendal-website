@@ -3,16 +3,17 @@ import Link from 'next/link';
 // components
 import Layout from '../components/Layout';
 import Testimonials from '../components/Testimonials';
+import ServiceBlock from '../components/ServiceBlock';
 
 const WordPressConsultancy = () => {
   return (
     <Layout
-      title='Web development and WordPress consultant services | Rob Kendal, freelance developer'
+      title='Freelance WordPress developer | WordPress consultancy | Rob Kendal, freelance WordPress developer'
       description='As a freelance WordPress consultant I work with local and national brands to develop their WordPress marketing websites. Talk to me about your website development project today.'
     >
       <section className='section home-hero'>
         <div className='hero-left'>
-          <h1>WordPress website consultant services</h1>
+          <h1>A freelance WordPress consultant who puts you first</h1>
           <p>
             Are you looking for help building your next WordPress website
             project? I'm a <strong>freelance WordPress developer</strong> with
@@ -85,20 +86,77 @@ const WordPressConsultancy = () => {
         </div>
       </section>
 
+      <section className='section is-md has-border-top'>
+        <h2 className='has-text-centered'>
+          How I can help with your WordPress project
+        </h2>
+        <p className='has-text-centered'>
+          I have a wealth of experience with a range of WordPress websites and can help your business with the following common project types.
+        </p>
+        <br />
+        <div className="columns is-centered is-multiline serviceblock-columns">
+          <div className="column is-4-desktop is-12-tablet">
+            <ServiceBlock
+              icon="far fa-hand-pointer"
+              title="WordPress website"
+              blurb="WordPress is a great choice for a new business website. From simple websites to complex enterprise solutions, you're in good hands from start to finish."
+            />
+          </div>
+          <div className="column is-4-desktop is-12-tablet">
+            <ServiceBlock
+              icon="fas fa-suitcase-rolling"
+              title="Migrations &amp; moves"
+              blurb="Moving websites can be daunting. Let me take the stress out of this process and migrate your website between hosts or to WordPress from another supplier."
+            />
+          </div>
+          <div className="column is-4-desktop is-12-tablet">
+            <ServiceBlock
+              icon="fas fa-cash-register"
+              title="WordPress ecommerce"
+              blurb="Take your sales online via WordPress + Woocommerce. Whether you want to sell £100's or £100,000's let's launch your ecommerce website together."
+            />         
+          </div>
+          <div className="column is-4-desktop is-12-tablet">
+            <ServiceBlock
+              icon="fas fa-rocket"
+              title="Optimisation &amp; SEO"
+              blurb="Current site running a bit slow? A speedy, well-optimised WordPress site is better for users and helps you climb those search engine rankings."
+            />
+          </div>
+          <div className="column is-4-desktop is-12-tablet">
+            <ServiceBlock
+              icon="fas fa-server"
+              title="WordPress hosting"
+              blurb="I offer reliable, fast web hosting for WordPress websites including site optimisation, caching, security controls, 99% uptime and free SSL certificates."
+            />
+          </div>
+          <div className="column is-4-desktop is-12-tablet">
+            <ServiceBlock
+              icon="fab fa-wordpress"
+              title="Theme development"
+              blurb="Whether it's custom WordPress theme development, additions to existing themes or advice on your current WordPress site setup and theme."
+            />
+          </div>
+        </div>
+        <br />
+        <div className="has-text-centered">
+          <Link href='/contact'>
+            <a className='button is-primary has-icon is-large'>
+              <span>book a free discovery call</span>
+              <span className='icon fas fa-chevron-circle-right'></span>
+            </a>
+          </Link>
+        </div>
+      </section>
+
       <section className='section is-secondary'>
         <article className='home-section-wordpress media'>
           <figure className='media-left'>
-            <video
-              playsInline=''
-              autoPlay=''
-              muted=''
-              loop=''
-              poster='/img/videos/wp-demo.jpg'
-              className='img-present'
-            >
-              <source src='/img/videos/wp-demo.webm' type='video/webm' />
-              <source src='/img/videos/wp-demo.mp4' type='video/mp4' />
-            </video>
+            <img
+              src='/img/example-wp.png'
+              alt='WordPress website designed and built by Rob Kendal'
+              className='unstyled'
+            />
             <img
               src='/img/wordpress-logo.png'
               alt='WordPress logo'
@@ -109,10 +167,10 @@ const WordPressConsultancy = () => {
             <h2 className='is-white'>WordPress development services</h2>
             <p>
               I specialise in delivering WordPress websites and WordPress
-              consultancy services and a range of clients of all sizes.
+              consultancy services to a range of clients of all sizes.
             </p>
             <p>
-              With me, as well as a reliable WordPress consultant, you'll always
+              With me, as well as a reliable freelance WordPress consultant, you'll always
               get:
             </p>
             <ul className='unstyled'>
@@ -175,6 +233,7 @@ const WordPressConsultancy = () => {
               </li>
             </ul>
             <p>Tell me about your WordPress project and how I can help</p>
+            <br />
             <p>
               <Link href='/contact'>
                 <a className='button is-default has-icon is-medium'>
@@ -242,8 +301,7 @@ const WordPressConsultancy = () => {
           <p>
             If you need a freelance WordPress consultant, want to discuss
             WordPress website development or want to hear some straightforward
-            advice on how to start your next WordPress website project, I'm all
-            ears: let's have a chat!
+            advice on how to start your next WordPress website project, I'd love to have a quick chat!
           </p>
           <br />
           <Link href='/contact'>
