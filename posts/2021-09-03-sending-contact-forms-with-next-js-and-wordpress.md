@@ -74,8 +74,8 @@ With these parts in place, the form now looks like this:
 
 ```js
 const MyContactForm = () => (
-	<form 
-	  name="contact" 
+	<form
+    name="contact" 
     method="post" 
     data-netlify="true" 
     data-netlify-honeypot="bot-field"
@@ -190,47 +190,47 @@ const Contact = ({ menuItems }) => {
 
   return (
     <div className={styles.container}>
-		<Head>
-			<title>Contact us page</title>
-		</Head>
-		<main className={styles.main}>
-			<h1 className={styles.title}>Contact us</h1>
-			<hr />
+      <Head>
+        <title>Contact us page</title>
+      </Head>
+      <main className={styles.main}>
+        <h1 className={styles.title}>Contact us</h1>
+        <hr />
                 
-    		<form onSubmit={handleSubmit}>
-      		<div>
-	        		<label className='label'>Your name</label>
-                 <input
-                    className='input'
-                    type='text'
-                    value={name}
-                    onChange={e => setName(e.target.value)}
-                    required
-                  />
-				</div>
-				<div>
-					<label className='label'>Your email</label>
-                 <input
-                   class='input'
-                   type='email'
-                   value={email}
-                   onChange={e => setEmail(e.target.value)}
-                   required
-                 />
-				</div>
-             <div>
-                <label className='label'>Your message</label>
-                <textarea
-                  className='textarea'                  
-                  value={message}
-                  onChange={e => setMessage(e.target.value)}
-                 ></textarea>
-             </div>
+        <form onSubmit={handleSubmit}>
+          <div>
+            <label className='label'>Your name</label>
+            <input
+              className='input'
+              type='text'
+              value={name}
+              onChange={e => setName(e.target.value)}
+              required
+            />
+          </div>
+          <div>
+            <label className='label'>Your email</label>
+            <input
+              class='input'
+              type='email'
+              value={email}
+              onChange={e => setEmail(e.target.value)}
+              required
+            />
+          </div>
+          <div>
+            <label className='label'>Your message</label>
+            <textarea
+              className='textarea'                  
+              value={message}
+              onChange={e => setMessage(e.target.value)}
+              ></textarea>
+          </div>
 
-             <button>Send</button>
-          </form>
-		</main>
-	</div>              
+          <button>Send</button>
+        </form>
+		  </main>
+	  </div>              
   );
 };
 

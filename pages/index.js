@@ -112,8 +112,8 @@ export default function Home({ allPostsData }) {
         </div>
         <div className='hero-right'>
           <img
-            src='/img/rob-kendal.jpeg'
-            alt='Rob Kendal freelance wordpress developer'
+            src='/img/rob-kendal.png'
+            alt='Rob Kendal freelance wordpress developer and headless CMS developer'
             className='fancy-img is-lg filter'
           />
         </div>
