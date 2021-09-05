@@ -2,6 +2,20 @@ import styles from './scss/testimonials.module.scss';
 
 const Testimonials = () => (
   <>
+    <blockquote className={`${styles.testimonial} ${styles.reverse}`}>
+      <figure>
+        <img src='/img/avatars/andrea-hall.jpeg' alt='Andrea Hall' />
+      </figure>
+      <p>
+        <span className='fas fa-quote-left'></span>Rob has been managing my website
+         for years, but more recently I turned to him for a complete re-build 
+         to a bespoke e-commerce solution. I trust him implicitly to know what system 
+         is best for my business, and to simplify the process for me. It feels like 
+         a colleague relationship rather than a supplier, and the quality of his support, 
+         and patience is invaluable.
+        <cite>Andrea Hall</cite>
+      </p>
+    </blockquote>
     <blockquote className={styles.testimonial}>
       <figure>
         <img src='/img/avatars/ann.jpeg' alt='Anne de Freyman' />
