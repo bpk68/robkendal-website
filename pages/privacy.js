@@ -50,7 +50,7 @@ const Privacy = () => {
             record information about how you browse the Site.
           </li>
           <li>
-            We use <a href='https://plausible.io'>Plausible Analytics</a>, a
+            We use <a href='https://pirsch.io/'>Pirsch Analytics</a>, a
             privacy-first analytics provider, to monitor how users use and
             navigate the site to help improve the content
           </li>
@@ -103,7 +103,7 @@ const Privacy = () => {
           We share your Personal Information with third parties to help us use
           your Personal Information, as described above. For example, we use
           Stripe to collect payments for services, such as the mentorship
-          program. We also use Plausible Analytics to help us understand how our
+          program. We also use Pirsch Analytics to help us understand how our
           customers use the Site.
         </p>
 

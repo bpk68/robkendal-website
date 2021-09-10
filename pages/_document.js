@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from 'next/document';
+import Document, { Html, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -9,13 +9,6 @@ class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head>
-        <script defer type="text/javascript" src="https://api.pirsch.io/pirsch.js"
-    id="pirschjs"
-    data-code="SBqaydY9SsOuAd1tF2eQNsH0RMWfrF7D" />
-          <script id="frase-script" data-hash="5da52150885f46fb950540edd57be061" src="https://app.frase.io/js/libraries/bot.js"/>
-          <script id="frase-schema" data-hash="728d7a1a-5a91-4b83-8d9e-9e761260d559" src="https://app.frase.io/js/libraries/schema.js"/>
-        </Head>
         <body>
           <Main />
           <NextScript />
