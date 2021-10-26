@@ -78,14 +78,14 @@ const JamstackDeveloper = () => {
         </div>
         <div className='hero-right'>
           <img
-            src='/img/wordpress-logo-alt.png'
+            src='/img/rob-kendal-1.png'
             alt='Rob Kendal freelance wordpress developer'
-            className='fancy-img is-lg filter'
+            className='fancy-img is-lg'
           />
         </div>
       </section>
 
-      <section className='section is-secondary'>
+      <section className='section is-primary is-fullwidth'>
         <article className='home-section-wordpress media'>
           <figure className='media-left'>
             <video
@@ -177,7 +177,7 @@ const JamstackDeveloper = () => {
             <p>Tell me about your WordPress project and how I can help</p>
             <p>
               <Link href='/contact'>
-                <a className='button is-default has-icon is-medium'>
+                <a className='button is-default is-outline has-icon is-medium'>
                   <span>discuss my project</span>
                   <span className='icon fas fa-chevron-circle-right'></span>
                 </a>

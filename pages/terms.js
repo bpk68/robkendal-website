@@ -13,7 +13,7 @@ const Terms = () => {
 
         <p>
           These terms and conditions outline the rules and regulations for the
-          use of RK Consulting's Website, located at robkendal.co.uk.
+          use of Ark Labs' Website, located at robkendal.co.uk.
         </p>
 
         <p>

@@ -1,14 +1,17 @@
 .cta {
     box-shadow: 3px 3px 20px rgba(87, 87, 87, 0.24);
     background-color: white;
-    background: var(--brand-primary-light);
-    background: linear-gradient(185deg, var(--brand-primary-light) 0%, var(--brand-tertiary) 100%);
+    background: var(--brand-alt-lighter);
     border: 1px solid var(--grey-light);
     border-radius: 14px;
     color: var(--text-color);
     position: relative;
     margin-top: 4rem;
     padding: 0.8rem 1.5rem;
+
+    article {
+        align-items: center;
+    }
 
     figure {
         margin: 0.5rem;
@@ -19,22 +22,20 @@
     }
 
     h4, h5 {
-        margin-bottom: 0.25em;        
+        margin-bottom: 0.25em;
     }
 
     h4 {
         margin-bottom: 0.25em;
         margin-top: 0.25em;
 
-        a {
-            color: var(--brand-tertiary-darker);;
-        }
+        // a {
+        //     color: var(--brand-tertiary-darker);;
+        // }
     }
 
     h5 {
-        color: white;
-        text-shadow: 1px 1px 0 #000000bf;
-        margin-bottom: 0.5em;
+        margin-bottom: 1em;
     }
 }
 

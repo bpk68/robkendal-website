@@ -24,7 +24,8 @@ const ShepherdsPurse = () => {
               </p>
               <h2>The challenge</h2>
               <p>
-                Shepherds Purse had a great Shopify store, but felt they weren't capitalising on their shopper journey and wanted to improve upsells, cross-sells and highlighting of their awards.
+                Shepherds Purse had a great Shopify store, but felt they weren't capitalising on their shopper journey and wanted to improve upsells, cross-sells and highlighting of their awards. They also wanted to unify their branding across
+                different areas of the site.
               </p>
             </div>
             <div className="column is-6">
@@ -33,10 +34,10 @@ const ShepherdsPurse = () => {
           </div>
         </div>
 
-        <div className="section is-secondary is-md">
+        <div className="section is-primary-light is-fullwidth is-md">
           <div className="columns is-multiline">
             <div className="column is-6">
-              <h2 className="is-white">How I helped</h2>
+              <h2 className="">How I helped</h2>
               <p>
                 I worked with the Shepherds Purse team to identify several areas for improvement in their UX and UI across their Shopify store, mostly centered around their product pages. I worked on their bespoke Shopify theme to make
                 changes that highlighted their cheeses' awards, made better use of their page space, and helped promote more of their pairing products for better upsells.

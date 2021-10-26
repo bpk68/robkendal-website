@@ -36,10 +36,10 @@ const Stones4Homes = () => {
         </div>
         </div>
 
-        <div className="section is-secondary is-md">
+        <div className="section is-primary-light is-fullwidth is-md">
           <div className="columns is-multiline">
           <div className="column is-6">
-            <h2 className="is-white">How I helped</h2>
+            <h2 className="">How I helped</h2>
             <p>
               As well as creating a clean, responsive design powered by a WordPress ecommerce solution, I worked closely with Stones4Homes to migrate a wealth of content
               from their existing web presence, preserving SEO value and search rankings for their landing pages and well-ranked products.

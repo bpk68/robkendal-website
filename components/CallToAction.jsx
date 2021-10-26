@@ -22,8 +22,8 @@ const CallToAction = ({
             <a href={url}>{title}</a>
           </h4>
           <h5 className="subtitle is-size-5">{subtitle}</h5>
-          <a href={url} className="button is-link is-fullwidth">Find out more</a>
-        </div>        
+          <a href={url} className="button is-secondary is-fullwidth">Find out more</a>
+        </div>
       </div>
     </article>
   </div>

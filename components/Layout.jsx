@@ -9,7 +9,7 @@ import Footer from './Footer';
 // styles
 import styles from './scss/layout.module.scss';
 
-const shortTitle = 'Freelance WordPress Developer and Jamstack developer';
+const shortTitle = 'Freelance Shopify developer, Jamstack developer, WordPress consultant';
 const baseUrl = "https://robkendal.co.uk";
 
 const generateUrl = url => `${baseUrl}${url}`;
@@ -17,9 +17,9 @@ const generateUrl = url => `${baseUrl}${url}`;
 const Layout = ({
   children,
   url,
-  title = 'Headless WordPress specialist | Freelance WordPress Consultant | Rob Kendal',
-  description = 'Freelance headless WordPress developer and WordPress consultant who builds lead-generating websites on the Jamstack with 15 years experience based in Selby, Yorkshire',
-  image = '/img/alt-logo.png'
+  title = 'Freelance Shopify Developer | Freelance WordPress Consultant | Rob Kendal',
+  description = 'Freelance Shopify developer, WordPress consultant, Jamstack CMS developer building lead-generating Shopify websites with 15 years experience in Selby, Leeds, York, Yorkshire',
+  image = '/img/ark-labs-logo_trans.png'
 }) => {
 
   const router = useRouter();

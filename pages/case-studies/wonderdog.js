@@ -31,10 +31,10 @@ const Wonderdog = () => {
           </div>
         </div>
 
-        <div className="section is-secondary is-md">
+        <div className="section is-primary-light is-fullwidth is-md">
           <div className="columns is-multiline">
             <div className="column is-6">
-              <h2 className="is-white">How I helped</h2>
+              <h2 className="">How I helped</h2>
               <p>
                 I worked with Sneyd's to produce a brand new ecommerce website designed and built from the ground up on the robust combination of WordPress and Woocommerce.
               </p>

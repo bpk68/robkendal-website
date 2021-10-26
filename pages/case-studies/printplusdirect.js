@@ -38,10 +38,10 @@ const PrintPlusDirect = () => {
           </div>
         </div>
 
-        <div className="section is-secondary is-md">
+        <div className="section is-primary-light is-fullwidth is-md">
           <div className="columns is-multiline">
             <div className="column is-6">
-              <h2 className="is-white">How I helped</h2>
+              <h2 className="">How I helped</h2>
               <p>
                 The best solution for Print Plus Direct was a custom WordPress build using Woocommerce to power their online shop.
               </p>

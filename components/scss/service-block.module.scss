@@ -1,5 +1,5 @@
 .serviceblock {
-    background-color: white;
+    background-color: var(--brand-alt-lighter);
     border: none;
     padding: 1.5em;
     font-size: var(--font-size-5);
@@ -12,11 +12,11 @@
         margin: 0 auto;
         text-align: center;
         display: block;
-        color: var(--brand-secondary-dark);
+        color: var(--brand-primary-dark);
     }
-    
+
     h3 {
-        color: var(--brand-alt);
+        color: var(--brand-primary);
     }
 }
 
@@ -32,4 +32,3 @@
     }
 }
 
-  

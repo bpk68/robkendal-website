@@ -20,8 +20,8 @@ export default function Home({ allPostsData }) {
           <p>
             Hi, I'm Rob Kendal. If you've been searching for a{' '}
             <strong>
-              freelance web developer who knows the Jamstack, WordPress and frontend web
-              development inside and out
+              freelance web developer who knows Shopify, WordPress and frontend web
+              development on the Jamstack inside and out
             </strong>
             , you've come to the right place.
           </p>
@@ -44,8 +44,11 @@ export default function Home({ allPostsData }) {
               <span className='fa fa-thumbs-up has-text-secondary has-padding-right-sm'></span>
               <span>
                 A freelancer with expert skills in &nbsp;
+                <Link href="/freelance-shopify-developer">
+                  <a>Shopify development</a>
+                </Link>, &nbsp;
                 <Link href="/headless-wordpress-websites">
-                  <a>headless content management websites</a>
+                  <a>headless content management systems</a>
                 </Link>
                 &nbsp; and &nbsp;
                 <Link href="/wordpress-consultancy">
@@ -56,7 +59,7 @@ export default function Home({ allPostsData }) {
             <li className='flex has-padding-bottom-sm'>
               <span className='fa fa-thumbs-up has-text-secondary has-padding-right-sm'></span>
               <span>
-                Marketing website design and development driven by your business
+                Marketing website design and Shopify development driven by your business
                 growth goals.
               </span>
             </li>
@@ -122,22 +125,22 @@ export default function Home({ allPostsData }) {
       <section className='section is-primary-light is-fullwidth'>
         <h2 className='has-text-centered'>How can I help?</h2>
         <p className='has-text-centered'>
-          As a freelance WordPress developer and freelance front-end expert, I can help build your next business website or ecommerce website
+          As a freelance Shopify developer, Shopify partner and front-end consultant, I can help build your next business website or ecommerce website
         </p>
         <div className="columns is-centered home-service-blocks is-desktop">
           <div className="column">
             <ServiceBlockHome
-              title="Jamstack web development"
-              img="/img/Jamstack_Logo_White_Transparent.png"
+              title="Shopify development &amp; support"
+              img="/img/shopify_logo_black.png"
               imgAlt="Shopify logo"
-              link="/headless-wordpress-websites"
-              blurb="I help build blazing fast, accessible &amp; beautiful websites using headless CMS's such as WordPress, using Jamstack technologies."
+              link="/freelance-shopify-developer"
+              blurb="As a Shopify Partner, I can help with ecommerce websites on Shopify, store migrations, custom Shopify theme development and more."
             />
           </div>
           <div className="column">
             <ServiceBlockHome
                 title="WordPress development"
-                img="/img/wordpress-logo.png"
+                img="/img/wordpress-logo-alt.png"
                 imgAlt="WordPress logo"
                 link="/wordpress-consultancy"
                 blurb="As a freelance WordPress developer, I can design and build WordPress themes, optimise your WordPress site, and help with SEO."
@@ -145,12 +148,12 @@ export default function Home({ allPostsData }) {
           </div>
           <div className="column">
             <ServiceBlockHome
-                title="Small business websites"
-                img="/img/react-logo-white-home.png"
-                imgAlt="React JS logo"
-                link="/small-business-websites"
-                blurb="You need a marketing-led website that delights your users and drives more leads for your busienss. I can help with this."
-              />
+              title="Jamstack web development"
+              img="/img/jamstack-logo.png"
+              imgAlt="Shopify logo"
+              link="/headless-wordpress-websites"
+              blurb="I help build blazing fast, accessible &amp; beautiful websites using headless CMS's such as GraphCMS, using Jamstack technologies."
+            />
           </div>
         </div>
       </section>
@@ -190,42 +193,42 @@ export default function Home({ allPostsData }) {
       </section>
 
       <section className='section is-md home-section-ux'>
-        <h2 className='has-text-centered'>Website design &amp; UX with marketing results in mind</h2>
+        <h2 className='has-text-centered'>Website design &amp; UX <br /> with marketing results in mind</h2>
         <br />
         <div className="columns is-multiline">
           <div className="column is-12-tablet is-12-desktop is-6-widescreen is-6-fullhd">
             <div className="columns is-multiline">
               <div className="column is-6">
-                <div className="box is-dark">
+                <div className="box is-primary">
                   <h3 className="title is-size-5 no-margin-top "><span className='icon fas fa-file-alt'></span>&nbsp;&nbsp;Content is king</h3>
-                  <p>Build a website around well-planned content that strikes a chord with your customers.</p>
+                  <p>I'll help you build a website around well-planned content that strikes a chord with your customers.</p>
                 </div>
               </div>
               <div className="column is-6">
-                <div className="box is-dark">
+                <div className="box is-primary">
                   <h3 className="title is-size-5 no-margin-top "><span className='icon fas fa-funnel-dollar'></span>&nbsp;&nbsp;CRO</h3>
-                  <p>Maximise leads from your website through conversion rate optimisation.</p>
+                  <p>Together we'll maximise leads from your website through conversion rate optimisation.</p>
                 </div>
               </div>
               <div className="column is-6">
-                <div className="box is-dark">
+                <div className="box is-primary">
                   <h3 className="title is-size-5 no-margin-top "><span className='icon fas fa-user-alt'></span>&nbsp;&nbsp;Clear user experience</h3>
-                  <p>Give customers the information they need simply and easily without getting in their way.</p>
+                  <p>I'll help give customers the information they need simply and easily without getting in their way.</p>
                 </div>
               </div>
               <div className="column is-6">
-                <div className="box is-dark">
+                <div className="box is-primary">
                   <h3 className="title is-size-5 no-margin-top "><span className='icon fas fa-directions'></span>&nbsp;&nbsp;Strong calls to action</h3>
-                  <p>Make it easy for visitors to take next steps to contact you, make a purchase, make their next move.</p>
+                  <p>Let's make it easy for visitors to take next steps to contact you, make a purchase, make their next move.</p>
                 </div>
               </div>
             </div>
           </div>
           <div className="column is-12-tablet is-12-desktop is-6-widescreen is-6-fullhd message">
-            <img src="/img/wordpress-jamstack-combined.png" alt="WordPress, Jamstack and website logos" className="unstyled" />
+            <img src="/img/wp-shopify-jamstack-logos.png" alt="WordPress, Jamstack and website logos" className="unstyled" />
             <p>Your business website is key to getting your message in front of your customers.</p>
             <p>A good website should be built with your audience in mind, geared towards their needs and drivers with strong calls to action and properly thought-out UX.</p>
-            <p>I can help your business build that website.</p>
+            <p>I can help your business build that website, whether it's WordPress, Shopify ecommerce, or powerful static sites.</p>
             <p>
               <Link href='/contact'>
                 <a className='button is-primary has-icon is-medium'>
@@ -281,7 +284,7 @@ export default function Home({ allPostsData }) {
         </div>
       </section>
 
-      <section className='section is-primary-alt is-md is-fullwidth no-margin-bottom'>
+      <section className='section is-primary-alt is-md is-fullwidth no-margin-bottom' style={{marginBottom: "-2em !important"}}>
         <h2 className='has-text-centered is-white'>Latest articles</h2>
         <br />
         <div className='columns is-multiline is-variable is-1-tablet is-2-desktop is-3-widescreen'>

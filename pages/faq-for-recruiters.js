@@ -30,7 +30,7 @@ const RecruiterFaq = () => {
 
         <ul>
           <li>
-            <a href=' https://www.visualcv.com/rob-kendal-dev/'>
+            <a href=' https://www.visualcv.com/rob-kendal-freelancer/'>
               My up to date CV
             </a>{' '}
             – made with Visual CV.
@@ -42,24 +42,23 @@ const RecruiterFaq = () => {
           </li>
           <li>
             My email address,{' '}
-            <a href='mailto:me@robkendal.co.uk'>me[at]robkendal.co.uk</a>
+            <a href='mailto:me@robkendal.co.uk'>me[at]robkendal.co.uk</a> or <a href='mailto:rob@ark-labs.co.uk'>rob[at]ark-labs.co.uk</a> (my business address).
           </li>
         </ul>
 
         <h2>Are you looking for work at the moment?</h2>
 
-        <p>No.</p>
+        <p>Yep.</p>
 
         <p>
-          I'm settled where I am with a mixture of a full time role as a Senior
-          AWS Consultant and my work as a{' '}
-          <Link href='/freelance-wordpress-consultant'>
-            <a>freelance WordPress consultant</a>
+          I am able to take on contract and software development consultancy roles alongside my freelance work as a {' '}
+          <Link href='/freelance-shopify-developer'>
+            <a>freelance Shopify consultant</a>
           </Link>
           .
         </p>
 
-        <h2>What does your ideal role look like?</h2>
+        <h2>What does your ideal contract or consultancy role look like?</h2>
 
         <p>
           I'm all about culture and the people that make up the company. It's
@@ -71,22 +70,21 @@ const RecruiterFaq = () => {
           <li>
             Working with modern technologies and approaches to problem-solving
           </li>
-          <li>Permanent roles</li>
+          <li>Contract or short-term consultancy roles</li>
           <li>
             Strong team unity with opportunities to learn, grow, and support
             each other
           </li>
           <li>Agile development environments</li>
-          <li>Strong career and personal development</li>
           <li>
             Independence and empowerment to tackle problems with a level of
             autonomy
           </li>
           <li>High levels of trust in employees</li>
           <li>Flexible hours</li>
-          <li>Home working options</li>
+          <li>Remote working conditions</li>
           <li>
-            Work-life balance. 40 hours is more than enough time to devote to a
+            Work-life balance. 40 hours (and less) is more than enough time to devote to a
             working week.
           </li>
         </ul>
@@ -108,14 +106,14 @@ const RecruiterFaq = () => {
         <ul>
           <li>JAMstack (JavaScript, API's, Markup)</li>
           <li>React (or Vue)</li>
-          <li>ES6 JavaScript</li>
+          <li>ES6/7 JavaScript</li>
           <li>Next.js</li>
-          <li>Gatsby</li>
+          <li>React.js</li>
           <li>
             CSS – both vanilla and preprocessors (SASS) using modern layouts,
             such as grid or flexbox
           </li>
-          <li>CSS frameworks such as Bulma, Foundation, Bootstrap</li>
+          <li>CSS frameworks such as Bulma, Foundation, Bootstrap, Tailwind</li>
           <li>Bundlers such as Webpack or Parcel</li>
           <li>Accessible, semantic HTML</li>
         </ul>
@@ -127,7 +125,7 @@ const RecruiterFaq = () => {
           developer. I started in full stack development using the Microsoft
           (MS) tech stack of C#, ASP.Net 2.0. In more recent years, I have been
           a senior frontend developer specialising in performant websites using
-          the latest JavaScript and frameworks, such as React.
+          the latest JavaScript and frameworks, such as React and Vue.
         </p>
 
         <p>
@@ -140,7 +138,7 @@ const RecruiterFaq = () => {
             <a href='https://robkendal.co.uk/about/'>About me page</a>
           </li>
           <li>
-            <a href='https://www.visualcv.com/rob-kendal-dev/'>My Visual CV</a>
+            <a href='https://www.visualcv.com/rob-kendal-freelancer/'>My Visual CV</a>
           </li>
           <li>
             <a href='https://www.linkedin.com/in/robkendal/'>
@@ -149,21 +147,12 @@ const RecruiterFaq = () => {
           </li>
         </ul>
 
-        <h2>What are your salary expectations?</h2>
+        <h2>What are your consultancy rates?</h2>
 
-        <p>Culture is a big deal and will always come above salary for me.</p>
-
-        <p>
-          That said, I'm not willing to disclose current or past salaries.
-          Whilst not true in every case, disclosing salary information from my
-          side can be (and has been) used to cap or limit offers.
-        </p>
+        <p>Culture and project fit are a big deal and will always come above day rates.</p>
 
         <p>
-          I've never seen a good argument for anyone offering a job to need to
-          know the applicant's current salary. For me, it comes down to there
-          being a position available at a – hopefully, at least – competitive
-          market rate. If I am a fit, then that's great! Let's move forward.
+          That said, I have previously worked on a consultancy day rate between &pound;450 + VAT and &pound;600 + VAT.
         </p>
 
         <h2>Are you willing to relocate for the right role?</h2>
@@ -173,9 +162,7 @@ const RecruiterFaq = () => {
         <h2>What sort of locations are you able to work in?</h2>
 
         <p>
-          Living in <strong>Selby, North Yorkshire</strong>, I'm happy to work
-          in the following locations for permanent roles (about 30 mins from my
-          home):
+          Living in <strong>Selby, North Yorkshire</strong>, I'm happy for very occasional travel to within 30-40 mins of my home:
         </p>
 
         <p>(In preferential order)</p>
@@ -188,8 +175,7 @@ const RecruiterFaq = () => {
         </ul>
 
         <p>
-          Of course, fully remote roles are ace and I'll always consider those
-          :)
+          Of course, fully remote options are the future and I've been fully remote for well over 3 years :)
         </p>
 
         <h2>I've come across your CV on 'XYZ' can we have a quick call?</h2>
@@ -216,7 +202,7 @@ const RecruiterFaq = () => {
           </li>
           <ul>
             <li>The job spec</li>
-            <li>Salary and benefits information</li>
+            <li>Rates and project information</li>
             <li>
               <strong>A subject line of 'React is ace!'</strong> so that I know
               you've made it this far onto the page. You will always get a reply
@@ -230,7 +216,7 @@ const RecruiterFaq = () => {
         <p>
           I could, but you can always view the latest, most up to date version
           of my CV on{' '}
-          <a href='https://www.visualcv.com/rob-kendal-dev/'>
+          <a href='https://www.visualcv.com/rob-kendal-freelancer/'>
             my Visual CV page
           </a>
           .
@@ -251,7 +237,7 @@ const RecruiterFaq = () => {
 
         <p>
           Again, you can download a PDF version of my CV from{' '}
-          <a href='https://www.visualcv.com/rob-kendal-dev/'>
+          <a href='https://www.visualcv.com/rob-kendal-freelancer/'>
             my Visual CV page
           </a>
           .
@@ -270,7 +256,7 @@ const RecruiterFaq = () => {
 
         <h2>What is your notice period?</h2>
 
-        <p>Currently, one month.</p>
+        <p>It depends on if I'm currently working on several large-scale projects or within a contract position at the moment. If you drop me a line I'll be happy to update you on my current situation.</p>
       </div>
     </Layout>
   );

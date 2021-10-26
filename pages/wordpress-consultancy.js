@@ -149,7 +149,7 @@ const WordPressConsultancy = () => {
         </div>
       </section>
 
-      <section className='section is-secondary'>
+      <section className='section is-primary is-fullwidth'>
         <article className='home-section-wordpress media'>
           <figure className='media-left'>
             <img
@@ -236,7 +236,7 @@ const WordPressConsultancy = () => {
             <br />
             <p>
               <Link href='/contact'>
-                <a className='button is-default has-icon is-medium'>
+                <a className='button is-default is-outline has-icon is-medium'>
                   <span>discuss my project</span>
                   <span className='icon fas fa-chevron-circle-right'></span>
                 </a>

@@ -41,10 +41,10 @@ const CreateTVT = () => {
           </div>
         </div>
 
-        <div className="section is-secondary is-md">
+        <div className="section is-primary-light is-fullwidth is-md">
           <div className="columns is-multiline">
             <div className="column is-6">
-              <h2 className="is-white">How I helped</h2>
+              <h2 className="">How I helped</h2>
               <p>
                 The development started by mapping out all the sites that needed to be created over a rolling release schedule. Once the first design and content were produced,
                 the build began with a hosted multisite WordPress instance.

@@ -130,7 +130,7 @@ const SmallBusinessWebsites = () => {
         </div>
       </section>
 
-      <section className='section is-secondary'>
+      <section className='section is-primary is-fullwidth'>
         <article className='home-section-wordpress media'>
           <figure className='media-left'>
             <img
@@ -202,7 +202,7 @@ const SmallBusinessWebsites = () => {
             <p>Let's talk about your small business website project and how we can hit your goals.</p>
             <p>
               <Link href='/contact'>
-                <a className='button is-default has-icon is-medium'>
+                <a className='button is-default is-outline has-icon is-medium'>
                   <span>discuss your project</span>
                   <span className='icon fas fa-chevron-circle-right'></span>
                 </a>

@@ -15,7 +15,7 @@ const FreelanceShopifyDeveloper = () => {
         <div className='hero-left'>
           <h1>A freelance Shopify developer you can rely on</h1>
           <p>
-            If you're looking for the support of a <strong>freelance Shopify developer</strong> based in York, to help with Shopify migrations,
+            If you're looking for the support of a <strong>freelance Shopify developer</strong> based in Selby, just near York, to help with Shopify migrations,
             custom Shopify theme development, or full, end to end ecommerce website builds, then look no further!
           </p>
           <p>
@@ -147,7 +147,7 @@ const FreelanceShopifyDeveloper = () => {
         </div>
       </section>
 
-      <section className='section is-secondary'>
+      <section className='section is-primary is-fullwidth'>
         <article className='home-section-wordpress media'>
           <figure className='media-left'>
             <img
@@ -221,7 +221,7 @@ const FreelanceShopifyDeveloper = () => {
             <br />
             <p>
               <Link href='/contact'>
-                <a className='button is-default has-icon is-medium'>
+                <a className='button is-default is-outline has-icon is-medium'>
                   <span>discuss your project</span>
                   <span className='icon fas fa-chevron-circle-right'></span>
                 </a>

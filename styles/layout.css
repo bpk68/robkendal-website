@@ -236,3 +236,11 @@ main > .section:last-of-type{
 .box.is-dark > .title {
   color: white;
 }
+
+.box.is-primary {
+  background-color: var(--brand-primary);
+  color: white;
+}
+.box.is-primary > .title {
+  color: white;
+}

@@ -38,10 +38,10 @@ const AndreaHall = () => {
           </div>
         </div>
 
-        <div className="section is-secondary is-md">
+        <div className="section is-primary-light is-fullwidth is-md">
           <div className="columns is-multiline">
             <div className="column is-6">
-              <h2 className="is-white">How I helped</h2>
+              <h2 className="">How I helped</h2>
               <p>
                 I started with Andrea's existing portfolio website which was powered by WordPress and developed a custom Shopify theme that focussed on her artwork products.
                 We used the Shopify platform to manage content and product information whilst developing a great-looking, clean Shopify theme that focussed on the customer and their needs as they browsed the site.

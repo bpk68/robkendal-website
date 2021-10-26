@@ -15,7 +15,7 @@ const SmallBusinessWebsites = () => {
         <div className='hero-left'>
           <h1>A freelance web developer for small business websites</h1>
           <p>
-            If you've been searching for a <strong>freelance web developer</strong> based in York, that builds small business websites to generate 
+            If you've been searching for a <strong>freelance web developer</strong> based in York, that builds small business websites to generate
             more leads for your business, then hello 👋🏻, I'm Rob.
           </p>
           <p>
@@ -33,7 +33,7 @@ const SmallBusinessWebsites = () => {
               You want to take your sales online with a conversion-focussed ecommerce website.
             </li>
             <li>
-              You want to skyrocket your site's performance by developing a headless CMS solution that powers a static site 
+              You want to skyrocket your site's performance by developing a headless CMS solution that powers a static site
               generator such as Gatsby or Next.js.
             </li>
             <li>
@@ -61,9 +61,9 @@ const SmallBusinessWebsites = () => {
         </div>
         <div className='hero-right'>
           <img
-            src='/img/rob-kendal.jpg'
+            src='/img/rob-kendal-1.png'
             alt='Rob Kendal freelance website developer'
-            className='fancy-img is-lg filter'
+            className='fancy-img is-lg'
           />
         </div>
       </section>
@@ -96,7 +96,7 @@ const SmallBusinessWebsites = () => {
               icon="fas fa-cash-register"
               title="Ecommerce sites"
               blurb="If you want to sell online, you need an ecommerce website that's designed to convert customers and drive sales."
-            />         
+            />
           </div>
           <div className="column is-4-desktop is-12-tablet">
             <ServiceBlock
@@ -131,7 +131,7 @@ const SmallBusinessWebsites = () => {
         </div>
       </section>
 
-      <section className='section is-secondary'>
+      <section className='section is-primary is-fullwidth'>
         <article className='home-section-wordpress media'>
           <figure className='media-left'>
             <img
@@ -148,7 +148,7 @@ const SmallBusinessWebsites = () => {
           <div className='media-content'>
             <h2 className='is-white'>Website development services</h2>
             <p>
-              I specialise in delivering small business websites and website 
+              I specialise in delivering small business websites and website
               consultancy services to a range of clients of all sizes.
             </p>
             <p>
@@ -189,7 +189,7 @@ const SmallBusinessWebsites = () => {
               <li className='flex has-padding-bottom-sm'>
                 <span className='fa fa-thumbs-up has-padding-right-sm'></span>
                 <span>
-                  Expert website design services and modern website development practices 
+                  Expert website design services and modern website development practices
                   including, Next.js, GraphQL and the Jamstack for superb customer experiences.
                 </span>
               </li>
@@ -204,7 +204,7 @@ const SmallBusinessWebsites = () => {
             <p>Let's talk about your sall business website project and how we can hit your goals.</p>
             <p>
               <Link href='/contact'>
-                <a className='button is-default has-icon is-medium'>
+                <a className='button is-default is-outline has-icon is-medium'>
                   <span>discuss your project</span>
                   <span className='icon fas fa-chevron-circle-right'></span>
                 </a>
@@ -265,8 +265,8 @@ const SmallBusinessWebsites = () => {
         <div className='container has-text-centered'>
           <h2>How I can help your business</h2>
           <p>
-            If you're in need of a freelance web developer, looking for advice on your existing website 
-            or in need of a complete custom website build for your business, it costs nothing to start a conversation. 
+            If you're in need of a freelance web developer, looking for advice on your existing website
+            or in need of a complete custom website build for your business, it costs nothing to start a conversation.
           </p>
           <br />
           <Link href='/contact'>
