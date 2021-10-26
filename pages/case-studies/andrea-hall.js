@@ -7,8 +7,8 @@ import ContactForm from '../../components/ContactForm';
 const AndreaHall = () => {
   return (
       <Layout
-          title='Andre Hall Next JS ecommerce website | Rob Kendal, freelance WordPress developer York'
-          description='Discover how I used WordPress as a headless CMS with Next.js and Snipcart to build Yorkshire artist, Andrea Hall, a new static website to replace her Etsy store'
+          title='Andrea Hall Shopify ecommerce website | Rob Kendal, freelance Shopify developer York'
+          description='Discover how I the Shopify platform with custom Shopify theme development to build Yorkshire artist, Andrea Hall, a new website to replace her Etsy store'
       >
 
         <div className="section home-hero">
@@ -29,8 +29,7 @@ const AndreaHall = () => {
                 to Etsy, she wanted to combine her online presences into a single, unified experience for both her and the customer.
               </p>
               <p>
-                The customer would get a single, streamlined ecommerce site to browse and make purchases, whilst Andrea would be able to manage all her content, products
-                and after sales care and admin in one place.
+                The customer would get a single, streamlined ecommerce site to browse and make purchases, whilst Andrea would be able to manage all her content, products, after-sales care and admin in one place.
               </p>
             </div>
             <div className="column is-6">
@@ -44,17 +43,14 @@ const AndreaHall = () => {
             <div className="column is-6">
               <h2 className="is-white">How I helped</h2>
               <p>
-                I started with Andrea's existing website which was powered by WordPress and developed a custom solution that detached it from the
-                front-facing customer website. This freed up WordPress to manage content and product information whilst I developed a separate front
-                end that could focus on simple, clear design that focussed on the customer.
+                I started with Andrea's existing portfolio website which was powered by WordPress and developed a custom Shopify theme that focussed on her artwork products.
+                We used the Shopify platform to manage content and product information whilst developing a great-looking, clean Shopify theme that focussed on the customer and their needs as they browsed the site.
               </p>
               <p>
-                The new website uses a lot of cool technology under the hood, including GraphQL to feed product data and content to the
-                detached front end via an API. The front end uses Next.js to generate a blazing-fast static site that means customers no longer
-                have to wait for more than a few milliseconds to get to their
+                Andrea had quite a back catalogue of products on Etsy, so part of the challenge was to migrate these existing products into Shopify, where they could marry up with the newly designed and built custom Shopify theme.
               </p>
               <p>
-                The last part of the puzzle was to migrate all Andrea's existing product data from her Etsy store into the new WordPress system.
+                The last part of the puzzle was to integrate Andrea's current marketing workflows into her new Shopify store, including newsletter collection, MailChimp automation, and flesh out her customer reviews system.
               </p>
             </div>
             <div className="column is-6">
@@ -65,25 +61,25 @@ const AndreaHall = () => {
                   <li className='flex has-padding-bottom-sm'>
                     <span className="fa fa-window-maximize has-text-secondary has-padding-right-sm"/>
                     <span>
-                      Designed and developed a new ecommerce website that simplifies the customer journey to maximise conversions
+                      Developed a new Shopify ecommerce website that simplifies the customer journey to maximise conversions
                     </span>
                   </li>
                   <li className='flex has-padding-bottom-sm'>
-                    <span className="fab fa-wordpress has-text-secondary has-padding-right-sm"/>
+                    <span className="fab fa-shopify has-text-secondary has-padding-right-sm"/>
                     <span>
-                      Deployed detached WordPress CMS with custom product and ecommerce management areas
+                      Designed and built a custom Shopify theme to suit Andrea's business goals
                     </span>
                   </li>
                   <li className='flex has-padding-bottom-sm'>
                     <span className="fa fa-tachometer-alt has-text-secondary has-padding-right-sm"/>
                     <span>
-                      Deployed separate, optimised front end, hosted on a specialised CDN for lightning quick customer experience
+                      Deployed optimised, SEO-friendly Shopify theme which ranks well on the Google Lighthouse site speed scale
                     </span>
                   </li>
                   <li className='flex has-padding-bottom-sm'>
-                    <span className="fab fa-stripe has-text-secondary has-padding-right-sm"/>
+                    <span className="fab fa-mailchimp has-text-secondary has-padding-right-sm"/>
                     <span>
-                      Integrated ecommerce solution with Snipcart and Stripe
+                      Integrated ecommerce solution with MailChimp
                     </span>
                   </li>
                   <li className='flex has-padding-bottom-sm'>

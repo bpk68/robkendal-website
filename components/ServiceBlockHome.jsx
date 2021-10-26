@@ -14,12 +14,12 @@ const ServiceBlockHome = ({
             <figure className={styles['img-container']}>
               <img src={img} alt={imgAlt} className="unstyled"/>
             </figure>
-            
+
             <div className={styles.content}>
-                <h3 className="title is-size-3 is-white no-margin-top">{title}</h3>
-                <p>{blurb}</p>   
+                <h3 className="title is-size-3 no-margin-top">{title}</h3>
+                <p>{blurb}</p>
                 <Link href={link}>
-                    <a className='button is-default has-icon is-medium'>
+                    <a className='button is-secondary has-icon is-medium'>
                         <span>find out more</span>
                         <span className='icon fas fa-chevron-circle-right'></span>
                     </a>

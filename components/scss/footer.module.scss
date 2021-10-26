@@ -2,8 +2,7 @@
   background-color: var(--text-color);
   color: var(--brand-primary-lighter);
   text-align: center;
-  //font-size: 1.2rem;
-  margin-top: 2em;
+  margin-top: 0;
   padding: 3em 0 2em;
 
   ul {
@@ -23,7 +22,7 @@
     font-weight: 500;
 
     &:hover {
-      color: var(--brand-tertiary);
+      color: var(--brand-secondary);
     }
   }
 }

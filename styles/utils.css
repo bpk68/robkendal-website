@@ -62,6 +62,9 @@
 .no-margin-top {
   margin-top: 0 !important;
 }
+.no-margin-bottom {
+  margin-bottom: 0 !important;
+}
 /* ---------------------------------------------------------------------- */
 /* text */
 /* ---------------------------------------------------------------------- */
@@ -88,7 +91,7 @@
   color: var(--brand-primary) !important;
 }
 .has-text-secondary {
-  color: var(--brand-secondary-dark) !important;
+  color: var(--brand-secondary) !important;
 }
 .has-text-brand-alt {
   color: var(--brand-alt-light) !important;

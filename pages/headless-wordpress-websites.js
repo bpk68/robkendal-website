@@ -15,7 +15,7 @@ const SmallBusinessWebsites = () => {
         <div className='hero-left'>
           <h1>A headless WordPress developer for fast, accessible websites to supercharge your business</h1>
           <p>
-            Looking for a <strong>freelance web developer</strong>, who specialises in <strong>headless WordPress development</strong> and builds websites to generate 
+            Looking for a <strong>freelance web developer</strong>, who specialises in <strong>headless WordPress development</strong> and builds websites to generate
             more leads for your business? <br /> Well hello there 👋🏻, I'm Rob.
           </p>
           <p>
@@ -59,9 +59,9 @@ const SmallBusinessWebsites = () => {
         </div>
         <div className='hero-right'>
           <img
-            src='/img/jamstack-logo-sm-square.png'
+            src='/img/rob-kendal-1.png'
             alt='Rob Kendal freelance Jamstack website developer'
-            className='fancy-img is-lg filter'
+            className='fancy-img is-lg'
             width="250"
           />
         </div>
@@ -69,7 +69,7 @@ const SmallBusinessWebsites = () => {
 
       <section className='section is-md has-border-top'>
         <h2 className='has-text-centered'>
-          Content management you know; <br />websites your customers love 
+          Content management you know; <br />websites your customers love
         </h2>
         <p className='has-text-centered'>
           You already know and love WordPress, so let's make it headless and build a fast, powerful front-end your customers will flock to.
@@ -95,7 +95,7 @@ const SmallBusinessWebsites = () => {
               icon="fas fa-cash-register"
               title="Headless ecommerce"
               blurb="Shopify and Woocommerce provide the power of a proven backend, whilst the Jamstack front-end delivers great online shopping experiences."
-            />         
+            />
           </div>
           <div className="column is-4-desktop is-12-tablet">
             <ServiceBlock
@@ -187,7 +187,7 @@ const SmallBusinessWebsites = () => {
               <li className='flex has-padding-bottom-sm'>
                 <span className='fa fa-thumbs-up has-padding-right-sm'></span>
                 <span>
-                  Expert website design services and modern website development practices 
+                  Expert website design services and modern website development practices
                   including, Next.js, Frontity, GraphQL and the Jamstack for superb customer experiences.
                 </span>
               </li>

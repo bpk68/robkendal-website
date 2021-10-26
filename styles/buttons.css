@@ -22,25 +22,52 @@
 /* varieties */
 .button,
 .button.is-default {
-  border: 1px solid var(--grey-light);
-  border-bottom: 5px solid var(--grey-dark);
-  background-color: var(--grey-light);
+  border: 1px solid var(--brand-secondary);
+  border-bottom: 5px solid var(--brand-secondary);
+  background-color: transparent;
+  color: var(--brand-secondary);
+  text-shadow: none;
 }
 .button:active,
 .button.is-default:active {
   transform: translate(0px, 5px);
-  border-bottom: 1px solid var(--grey-light);
+  border-bottom: 1px solid var(--brand-secondary);
+}
+
+.button.is-default.is-outline {
+  border: 1px solid var(--brand-primary-light);
+  border-bottom: 5px solid var(--brand-primary-light);
+  background-color: transparent;
+  color: var(--brand-primary-light);
+  text-shadow: none;
 }
 
 .button.is-primary {
-  border: 1px solid var(--brand-secondary-dark);
-  border-bottom: 5px solid var(--brand-secondary-darker);
-  background-color: var(--brand-secondary-dark);
+  border: 1px solid var(--brand-secondary);
+  border-bottom: 5px solid var(--brand-secondary-dark);
+  background-color: var(--brand-secondary);
   color: var(--brand-primary-lighter);
   text-shadow: 0px 2px var(--brand-secondary-darker);
 }
 .button.is-primary:active {
   border-bottom: 1px solid var(--brand-secondary);
+}
+
+.button.is-secondary {
+  border: 1px solid var(--brand-primary);
+  border-bottom: 5px solid var(--brand-primary-dark);
+  background-color: var(--brand-primary);
+  color: var(--brand-primary-light);
+  text-shadow: 0px 2px var(--brand-primary-darker);
+}
+.button.is-secondary:active {
+  border-bottom: 1px solid var(--brand-primary);
+}
+
+.button.is-secondary.is-outline {
+  background-color: transparent;
+  color: var(--brand-primary);
+  text-shadow: none;
 }
 
 /* augmentations */

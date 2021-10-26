@@ -15,6 +15,14 @@ const caseStudyItems = [
   },
   {
     id: 2,
+    title: 'Print Plus Direct',
+    subTitle: 'Ecommerce WordPress build',
+    img: 'printplusdirect-screenshot.png',
+    blurb: 'Supplying NCR forms and stationery to businesses nationwide, I worked with Print Plus Direct on an ecommerce site that simplifies their complex product options and drives new leads to their business',
+    link: 'printplusdirect',
+  },
+  {
+    id: 3,
     title: 'CreateTVT',
     subTitle: 'Multisite theming',
     img: 'createtvt-screenshot.png',
@@ -22,7 +30,7 @@ const caseStudyItems = [
     link: 'createtvt',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Sneyds Wonderdog',
     subTitle: 'Ecommerce WordPress build',
     img: 'sneyds-screenshot.png',
@@ -30,21 +38,21 @@ const caseStudyItems = [
     link: 'wonderdog',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Andrea Hall',
-    subTitle: 'Headless WordPress & Snipcart',
+    subTitle: 'Custom Shopify theme development',
     img: 'andreahall-screenshot.png',
-    blurb: 'Andrea is an incredible local artist who creates art for open water swimmers. I built her a super speedy static ecommerce website powered by a headless WordPress backend and Snipcart',
+    blurb: 'Andrea is an incredible local Yorkshire artist who creates art for open water swimmers. I built her a super speedy Shopify ecommerce website with custom Shopify theme development',
     link: 'andrea-hall',
   },
   {
-    id: 5,
-    title: 'Print Plus Direct',
-    subTitle: 'Ecommerce WordPress build',
-    img: 'printplusdirect-screenshot.png',
-    blurb: 'Supplying NCR forms and stationery to businesses nationwide, I worked with Print Plus Direct on an ecommerce site that simplifies their complex product options and drives new leads to their business',
-    link: 'printplusdirect',
-  }
+    id: 6,
+    title: 'Shepherds Purse',
+    subTitle: 'Shopify theme development and support',
+    img: 'shepherds-purse-screenshot.png',
+    blurb: 'Shepherds Purse are an award-winning cheese maker here in Yorkshire. They needed UX consultancy and support on their Shopify store including improving their user journey and highlighing their awards',
+    link: 'shepherds-purse-cheeses',
+  },
 ]
 
 const CaseStudies = () => {
@@ -56,17 +64,18 @@ const CaseStudies = () => {
         <div className='container'>
           <h1>Case Studies</h1>
           <p>
-            I've worked with some great clients over the years on a diverse range of projects, both ecommerce and non-ecommerce business websites.
+            I've worked with some great clients over the years on a diverse range of {' ' }
+            <Link href="/freelance-shopify-developer">Shopify</Link> {' '} and WordPress projects, both ecommerce and non-ecommerce business websites.
           </p>
           <p>
             You can explore a few of the more recent and challenging ones here. Investigate, view the sites, ask me any questions, and please get in touch if you'd like
-            to know how I can achieve the same results for you and your business.
+            to know how I can achieve the same results for you and your business, including website consultation, strategy, custom Shopify development and more.
           </p>
         </div>
 
           <div className="columns is-multiline section">
             {
-              caseStudyItems.map(item => (
+              caseStudyItems.reverse().map(item => (
                   <div className="column is-6-desktop is-12" key={item.id}>
                     <article className='card article-item' style={{"box-shadow": "3px 3px 20px rgba(87, 87, 87, 0.24)"}}>
                       <div className='card-image'>

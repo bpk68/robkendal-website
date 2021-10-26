@@ -79,9 +79,9 @@ const WordPressConsultancy = () => {
         </div>
         <div className='hero-right'>
           <img
-            src='/img/wordpress-logo-alt.png'
-            alt='Rob Kendal freelance wordpress developer'
-            className='fancy-img is-lg filter'
+            src='/img/rob-kendal-1.png'
+            alt='Rob Kendal freelance WordPress developer'
+            className='fancy-img is-lg'
           />
         </div>
       </section>
@@ -114,7 +114,7 @@ const WordPressConsultancy = () => {
               icon="fas fa-cash-register"
               title="WordPress ecommerce"
               blurb="Take your sales online via WordPress + Woocommerce. Whether you want to sell £100's or £100,000's let's launch your ecommerce website together."
-            />         
+            />
           </div>
           <div className="column is-4-desktop is-12-tablet">
             <ServiceBlock

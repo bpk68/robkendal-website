@@ -65,7 +65,8 @@ const Footer = () => (
       <SocialLinks overrideStyles={'none'} />
     </div>
     <div className={styles.copyright}>
-      copyright &copy; {new Date().getFullYear()} Rob Kendal. view the{' '}
+      copyright &copy; {new Date().getFullYear()} <a href="https://ark-labs.co.uk" target="_blank">Ark Labs</a>.
+      Registered company in England &amp; Wales No. 13589051. view the{' '}
       <Link href='/privacy'>
         <a>privacy policy</a>
       </Link>{' '}

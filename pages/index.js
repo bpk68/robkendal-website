@@ -43,14 +43,14 @@ export default function Home({ allPostsData }) {
             <li className='flex has-padding-bottom-sm'>
               <span className='fa fa-thumbs-up has-text-secondary has-padding-right-sm'></span>
               <span>
-                A freelancer with expert skills in &nbsp; 
+                A freelancer with expert skills in &nbsp;
                 <Link href="/headless-wordpress-websites">
                   <a>headless content management websites</a>
-                </Link>                 
+                </Link>
                 &nbsp; and &nbsp;
                 <Link href="/wordpress-consultancy">
                   <a>WordPress websites</a>
-                </Link> 
+                </Link>
               </span>
             </li>
             <li className='flex has-padding-bottom-sm'>
@@ -112,15 +112,15 @@ export default function Home({ allPostsData }) {
         </div>
         <div className='hero-right'>
           <img
-            src='/img/rob-kendal.png'
-            alt='Rob Kendal freelance wordpress developer and headless CMS developer'
-            className='fancy-img is-lg filter'
+            src='/img/rob-kendal-1.png'
+            alt='Rob Kendal freelance Shopify developer, WordPress consultant and headless CMS developer'
+            className='fancy-img is-lg'
           />
         </div>
       </section>
 
-      <section className='section is-secondary'>
-        <h2 className='has-text-centered is-white'>How can I help?</h2>
+      <section className='section is-primary-light is-fullwidth'>
+        <h2 className='has-text-centered'>How can I help?</h2>
         <p className='has-text-centered'>
           As a freelance WordPress developer and freelance front-end expert, I can help build your next business website or ecommerce website
         </p>
@@ -281,7 +281,7 @@ export default function Home({ allPostsData }) {
         </div>
       </section>
 
-      <section className='section is-primary is-md'>
+      <section className='section is-primary-alt is-md is-fullwidth no-margin-bottom'>
         <h2 className='has-text-centered is-white'>Latest articles</h2>
         <br />
         <div className='columns is-multiline is-variable is-1-tablet is-2-desktop is-3-widescreen'>
@@ -341,7 +341,7 @@ export default function Home({ allPostsData }) {
         <br />
         <p className='has-text-centered'>
           <Link href='/blog'>
-            <a className='button is-default has-icon is-medium'>
+            <a className='button is-default has-icon is-medium is-outline'>
               <span>read more</span>
               <span className='icon fas fa-chevron-circle-right'></span>
             </a>

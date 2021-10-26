@@ -36,7 +36,7 @@ const FreelanceShopifyDeveloper = () => {
               You want to migrate your current ecommerce solution to Shopify but aren't sure where to start.
             </li>
             <li>
-              You want to maximise your site's performance by using Shopify as a headless ecommerce platform that powers a static site 
+              You want to maximise your site's performance by using Shopify as a headless ecommerce platform that powers a static site
               generator such as Gatsby or Next.js.
             </li>
             <li>
@@ -67,7 +67,7 @@ const FreelanceShopifyDeveloper = () => {
         </div>
         <div className='hero-right'>
           <img
-            src='/img/shopify_glyph_small.png'
+            src='/img/rob-kendal-1.png'
             alt='Rob Kendal freelance Shopify developer'
             className='fancy-img is-lg'
           />
@@ -80,7 +80,7 @@ const FreelanceShopifyDeveloper = () => {
         </h2>
         <p className='has-text-centered'>
           I wear my Shopify Partner badge with pride. It means peace of mind that you're in the hands of a trusted Shopify professional.
-        </p>        
+        </p>
         <img src="/img/shopify-partner.png" alt="Shopify Partners logo" className="unstyled" />
       </section>
 
@@ -112,7 +112,7 @@ const FreelanceShopifyDeveloper = () => {
               icon="fas fa-cash-register"
               title="Ecommerce strategy"
               blurb="As well as full ecommerce development builds, I can help with initial planning and strategy to get your site started on the right foot."
-            />         
+            />
           </div>
           <div className="column is-4-desktop is-12-tablet">
             <ServiceBlock
@@ -205,7 +205,7 @@ const FreelanceShopifyDeveloper = () => {
               <li className='flex has-padding-bottom-sm'>
                 <span className='fa fa-thumbs-up has-padding-right-sm'></span>
                 <span>
-                  Expert Shopify services and modern development practices 
+                  Expert Shopify services and modern development practices
                   including, Next.js, GraphQL and the Jamstack with Shopify as a headless ecommerce platform.
                 </span>
               </li>

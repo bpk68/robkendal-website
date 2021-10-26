@@ -99,7 +99,7 @@ const ContactForm = ({formName = "contact-form", action="/contact/thanks", pageL
             id='txtMessage'
             name='message'
             className='textarea'
-            placeholder='Hey Rob, I have an exciting WordPress or web development project I want to talk about'
+            placeholder='Hey Rob, I have an exciting Shopify store, WordPress or web development project I want to talk about (please provide as much detail as you can)'
             onChange={handleChange}
             required={true}
           />
