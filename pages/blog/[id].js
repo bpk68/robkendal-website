@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { useEffect } from 'react';
-import Prism from 'prismjs';
+import hljs from 'highlight.js';
 
 // components
 import Layout from '../../components/Layout';
@@ -32,7 +32,7 @@ export default function Post({ postData, allRelatedPostsData }) {
 
   useEffect(() => {
     // apply code syntax highlighting
-    Prism.highlightAll();
+    hljs.highlightAll();
 
     // add ethical ads display to loaded content
     function applyAds() {
@@ -44,12 +44,12 @@ export default function Post({ postData, allRelatedPostsData }) {
       try {
         if(ethicalads) {
           ethicalads.load();
-        }  
+        }
       } catch (error) {
         // ethical ads not found
-      }      
+      }
     }
-    window.addEventListener('load', applyAds);    
+    window.addEventListener('load', applyAds);
 
     return () => window.removeEventListener('load', applyAds);
   }, []);
@@ -62,7 +62,7 @@ export default function Post({ postData, allRelatedPostsData }) {
       url={`blog/${postData.id}`}
     >
       <>
-        <article className='container article' id="article-content">          
+        <article className='container article' id="article-content">
           <div className='post-meta'>
             <DateDisplay
                 dateString={postData.date}

@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
+import hljs from 'highlight.js';
 
-import Prism from 'prismjs';
 
 // app styles
 import '@fortawesome/fontawesome-free/css/all.css';
@@ -13,11 +13,8 @@ import '../styles/buttons.css';
 import '../styles/homepage.css';
 import '../styles/overrides.css';
 
-// prism themes
-//import '../styles/prism.tomorrow-night.css';
-//import '../styles/prism.material.css';
-import '../styles/prism.shades.css';
-//import '../styles/prism.nord.css';
+// code highlighting themes
+import '../node_modules/highlight.js/styles/night-owl.css';
 
 // responsiveness
 import '../styles/responsive.css';
