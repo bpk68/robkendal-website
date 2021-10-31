@@ -26,7 +26,7 @@ const Terms = () => {
           </a>{' '}
           and the{' '}
           <a href='https://www.privacypolicyonline.com/terms-conditions-generator/'>
-            Free Terms & Conditions Generator
+            Free Terms &amp; Conditions Generator
           </a>
           .
         </p>
@@ -52,7 +52,7 @@ const Terms = () => {
 
         <p>
           We employ the use of cookies. By accessing Rob Kendal, you agreed to
-          use cookies in agreement with the RK Consulting's Privacy Policy.
+          use cookies in agreement with the Ark Labs's Privacy Policy.
         </p>
 
         <p>
@@ -66,7 +66,7 @@ const Terms = () => {
         <h2>License</h2>
 
         <p>
-          Unless otherwise stated, RK Consulting and/or its licensors own the
+          Unless otherwise stated, Ark Labs and/or its licensors own the
           intellectual property rights for all material on Rob Kendal. All
           intellectual property rights are reserved. You may access this from
           Rob Kendal for your own personal use subjected to restrictions set in
@@ -89,16 +89,16 @@ const Terms = () => {
           exchange opinions and information in certain areas of the website. RK
           Consulting does not filter, edit, publish or review Comments prior to
           their presence on the website. Comments do not reflect the views and
-          opinions of RK Consulting,its agents and/or affiliates. Comments
+          opinions of Ark Labs,its agents and/or affiliates. Comments
           reflect the views and opinions of the person who post their views and
-          opinions. To the extent permitted by applicable laws, RK Consulting
+          opinions. To the extent permitted by applicable laws, Ark Labs
           shall not be liable for the Comments or for any liability, damages or
           expenses caused and/or suffered as a result of any use of and/or
           posting of and/or appearance of the Comments on this website.
         </p>
 
         <p>
-          RK Consulting reserves the right to monitor all Comments and to remove
+          Ark Labs reserves the right to monitor all Comments and to remove
           any Comments which can be considered inappropriate, offensive or
           causes breach of these Terms and Conditions.
         </p>
@@ -127,7 +127,7 @@ const Terms = () => {
         </ul>
 
         <p>
-          You hereby grant RK Consulting a non-exclusive license to use,
+          You hereby grant Ark Labs a non-exclusive license to use,
           reproduce, edit and authorize others to use, reproduce and edit any of
           your Comments in any and all forms, formats or media.
         </p>
@@ -183,7 +183,7 @@ const Terms = () => {
           that: (a) the link would not make us look unfavorably to ourselves or
           to our accredited businesses; (b) the organization does not have any
           negative records with us; (c) the benefit to us from the visibility of
-          the hyperlink compensates the absence of RK Consulting; and (d) the
+          the hyperlink compensates the absence of Ark Labs; and (d) the
           link is in the context of general resource information.
         </p>
 
@@ -197,7 +197,7 @@ const Terms = () => {
         <p>
           If you are one of the organizations listed in paragraph 2 above and
           are interested in linking to our website, you must inform us by
-          sending an e-mail to RK Consulting. Please include your name, your
+          sending an e-mail to Ark Labs. Please include your name, your
           organization name, contact information as well as the URL of your
           site, a list of any URLs from which you intend to link to our Website,
           and a list of the URLs on our site to which you would like to link.
@@ -217,7 +217,7 @@ const Terms = () => {
         </ul>
 
         <p>
-          No use of RK Consulting's logo or other artwork will be allowed for
+          No use of Ark Labs' logo or other artwork will be allowed for
           linking absent a trademark license agreement.
         </p>
 
