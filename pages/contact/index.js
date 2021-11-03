@@ -16,30 +16,20 @@ const Contact = () => {
 
   return (
     <Layout
-      title='Contact Rob Kendal, freelance web developer'
-      description="Contact Rob Kendal about your next web development project, WordPress website, or if you're a developer looking for a coding mentor"
+      title='Contact Rob Kendal | Freelance Shopify developer in York, Selby, Leeds'
+      description="Contact Rob Kendal about your next Shopify website project, WordPress website, or if you're a developer looking for a coding mentor"
     >
       <div className='container'>
         <h1>Let's talk!</h1>
         <p>
-          Ready to talk about your WordPress or Shopify project? Need help with a web
-          development project? Or want to know more about my{' '}
+          Ready to talk about your business website needs, or your next WordPress or Shopify project? Need help with a web
+          development support and maintenance? Or want to know more about my{' '}
           <Link href='/mentorship'>
             <a>coding mentorship support</a>
           </Link>
           ?
         </p>
-        {/* <p>You can book a 30 min discovery slot directly on my calendar here, or fill in the form and I'll be in touch within 24 horus.</p> */}
-        <p>Fill in the form and I'll be in touch within 24 horus.</p>
-
-        {/* <!-- Calendly inline widget begin --> */}
-        {/* <div
-            id="rk-calendly-embed"
-            className="calendly-inline-widget"
-        >
-        </div> */}
-        {/* <!-- Calendly inline widget end --> */}
-
+        <p>You can book a 15 min discovery slot directly on <a href="https://www.calendar.com/ark-labs/30-min-meeting/" target="_blank" noreferrer noopener>my calendar here</a>, or fill in the form below and I'll be in touch within 24 hours.</p>
         <p>
           Send me a message below and{' '}
           <strong>I'll get back to you within 24 hours</strong>
