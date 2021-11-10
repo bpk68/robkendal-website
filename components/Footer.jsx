@@ -36,6 +36,11 @@ const Footer = () => (
         </Link>
       </li>
       <li>
+        <Link href='/mentorship'>
+          <a>mentorship</a>
+        </Link>
+      </li>
+      <li>
         <Link href='/freelance-jamstack-developer'>
           <a>freelance Jamstack developer</a>
         </Link>

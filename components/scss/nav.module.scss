@@ -14,19 +14,10 @@
       border-bottom: 4px solid var(--brand-alt);
     }
   }
-
-  a.button {
-  }
-
-  a:hover {
-  }
 }
 
 .active {
   border-bottom: 4px solid var(--brand-alt-light);
-}
-
-.mainnav {
 }
 
 .mobilenav {
@@ -38,7 +29,6 @@
     flex-direction: column;
     position: relative;
     top: 25px;
-    //left: 25px;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
@@ -58,7 +48,7 @@
     }
 
     .navburger {
-      color: var(--brand-alt);
+      color: var(--brand-primary-light);
       font-weight: bold;
       display: flex;
       align-items: center;
@@ -89,6 +79,7 @@
 
     a:not(.button) {
       display: block;
+      color: var(--brand-primary-dark);
       border-bottom: 4px solid transparent;
 
       &:hover {

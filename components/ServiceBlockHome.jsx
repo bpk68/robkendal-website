@@ -12,7 +12,7 @@ const ServiceBlockHome = ({
     return (
         <div className={styles.serviceblockhome}>
             <figure className={styles['img-container']}>
-              <img src={img} alt={imgAlt} className="unstyled"/>
+              <img src={img} alt={imgAlt} className="unstyled" />
             </figure>
 
             <div className={styles.content}>

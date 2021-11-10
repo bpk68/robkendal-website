@@ -84,9 +84,16 @@
   .project-item .media-left img {
     max-width: 9rem;
   }
-  
+
   .serviceblock-columns .column {
       width: 100%;
+  }
+
+  .section.is-fullwidth {
+    margin-left: -1em;
+    margin-right: -1em;
+    padding-left: 1em;
+    padding-right: 1em;
   }
 }
 
@@ -154,5 +161,12 @@
   #comments-show {
     bottom: -85px;
     width: 80%;
+  }
+
+  .section.is-fullwidth {
+    margin-left: -0.5em;
+    margin-right: -0.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
   }
 }

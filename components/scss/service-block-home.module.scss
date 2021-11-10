@@ -5,7 +5,7 @@
     font-size: var(--font-size-5);
     height: 100%;
     border-radius: 12px;
-    box-shadow: none; 
+    box-shadow: none;
     text-align: center;
     position: relative;
 
@@ -31,7 +31,7 @@
     }
     img {
         max-height: 10rem;
-        max-width: 20rem;   
+        max-width: 20rem;
         display: block;
         margin: 0 auto;
     }
@@ -42,7 +42,7 @@
 
     p {
         min-height: 9rem;
-    }    
+    }
 }
 
 @media screen and (max-width: 1500px) {
@@ -67,6 +67,7 @@
 
 @media screen and (max-width: 1150px) {
     .serviceblockhome {
+        padding: 2em 1em;
 
         &::after {
             width: 70%;
@@ -82,17 +83,17 @@
             display: block;
         }
         img {
-            max-height: initial;
-            max-width: 80%;
+            max-width: 60%;
+            max-height: 190px;
         }
 
         a {
             width: 70%;
         }
-    
+
         p {
             min-height: initial;
-        }   
+        }
     }
 }
 
@@ -106,4 +107,3 @@
     }
 }
 
-  
