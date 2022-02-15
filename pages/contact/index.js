@@ -29,7 +29,6 @@ const Contact = () => {
           </Link>
           ?
         </p>
-        <p>You can book a 15 min discovery slot directly on <a href="https://www.calendar.com/ark-labs/30-min-meeting/" target="_blank" noreferrer noopener>my calendar here</a>, or fill in the form below and I'll be in touch within 24 hours.</p>
         <p>
           Send me a message below and{' '}
           <strong>I'll get back to you within 24 hours</strong>
