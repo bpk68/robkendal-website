@@ -347,6 +347,8 @@ Next up, the buttons:
 
 I'm just showing the 'prev' button for now as both buttons are the same, just the SVG icon differs between left and right chevron. We're assigning the function `movePrev` to the button's click handler. The other button has a matching `moveNext` click handler and we'll define these click handlers in the logic section coming up.
 
+Both buttons have a `disabled` property that's calculated using the `isDisabled()` function that we'll also cover next in the logic section of the article.
+
 And each button has a butt load of Tailwind classes on it, but the essentially do the following:
 
 * Add base background colours and opacity
@@ -430,9 +432,132 @@ For each resource item we produce the following JSX:
 
 Which is what we saw in the early part of the article but with the Tailwind classes back in. What's happening here is that we have two blocks for each resource item. 
 
-The first block has a forced square width and height as well as centering any text. Inside of this we have a link and an image. We're using an image-hiding pattern here that aids accessibility whilst giving us a tip-top UI. The image is given a `src` property and an alt tag, but is visually hidden from display. This allows screen readers to _see_ the image but handles situations where the 
+The first block has a forced square width and height as well as centring any text. Inside of this, we have a link and an image. We're using an image-hiding pattern here that aids accessibility whilst giving us a tip-top UI. The image is given a `src` property and an alt tag, but is visually hidden from display. This allows screen readers to _see_ the image but handles situations where the image is a wonky or irregular shape. 
+
+We attach the same image URL to the background property of the item and then set background styles via Tailwind to centralise and cover the full height and width of the item with the image. 
+
+The second block is another link that contains a heading level 3 element with the resource's title. Like its image block friend, it's given a full height and width, but 0% opacity so it's effectively 'hidden' from view (hiding in plain sight 😆). 
+
+When hovered on it's given a full opacity with a translucent background colour and contrasting white text. It's also positioned absolutely so we can display it on top of the image; the z-index value of 10 really helps here too.
+
+This combination pattern of having some sort of image with some sort of hovered content appearing is very common. Although it's worth bearing in mind that **for mobile purposes you'd likely want an alternative approach** as the hover stuff won't work.
 
 ### The carousel logic
+
+Now for the fun part: making the carousel be more, well, carouselly...
+
+Let's start with the component definition and initial variables:
+
+    const Carousel = () => {
+      const maxScrollWidth = useRef(0);
+      const [currentIndex, setCurrentIndex] = useState(0);
+      const carousel = useRef(null);
+    
+
+We define the component and then set up some variables:
+
+* `maxScrollWidth` - we're going to store the carousel's total scrollable width in this variable once we finish rendering the component. We're using the `useRef` Hook from React here because it allows us to create a fixed or static value that won't change between renders. Important because the component is likely to rerender by clicking the prev/next buttons.
+* `currentIndex` - this is a simple state value that will keep track of what 'page' we're on. It'll help us later on to determine if we can move forward or backwards.
+* `carousel` - we're using the `useRef` Hook again, but this time to create a static reference to the underlying DOM element that is a `div` which houses the carousel contents. We'll need this to help work out when and how to scroll and get values relating to the carousel's width.
+
+With the variables in place, let's look at the scrolling handlers...
+
+    const movePrev = () => {
+        if (currentIndex > 0) {
+          setCurrentIndex((prevState) => prevState - 1);
+        }
+      };
+
+For moving backwards, the `movePrev` function handles button clicks on the 'prev' button. We check to see if the `currentIndex` value is greater than zero and if it _is_, then we simply update the value in state to one _less_ than the current value. 
+
+If we're already at zero then it doesn't make sense to go back anymore so the function short circuits out and doesn't do anything. 
+
+    const moveNext = () => {
+        if (
+          carousel.current !== null &&
+          carousel.current.offsetWidth * currentIndex <= maxScrollWidth.current
+        ) {
+          setCurrentIndex((prevState) => prevState + 1);
+        }
+      };
+
+When the 'next' button is clicked it's `moveNext`'s time to shine. We're essentially doing the exact opposite of the `movePrev` function but things are a bit trickier. When moving backwards we just need to know when we hit zero. But when scrolling _forwards_ we don't know how many times we can do that, it's not a hard limit defined by a single number. 
+
+Instead, we need to work out if the currently visible slice (i.e. width) of the carousel, times the current _page_, is going to be _less than_ the maximum scrollable width of the carousel's content -- i.e. the carousel's total width, even that which isn't visible. 
+
+If it's going to be _more_ than the max-width, it doesn't make sense to allow users to scroll anymore, so we don't do anything.
+
+However, if our conditional statement passes, we do the opposite of `movePrev` and update the `currentIndex` value in state to one higher than its current value.
+
+> On their own, these button click handlers don't physically scroll the carousel contents, but we'll see in a moment how we can watch the value of `currentIndex` using the `useEffect` Hook to make that happen.
+
+Next up, our `isDisabled` helper function:
+
+    const isDisabled = (direction) => {
+        if (direction === 'prev') {
+          return currentIndex <= 0;
+        }
+    
+        if (direction === 'next' && carousel.current !== null) {
+          return (
+            carousel.current.offsetWidth * currentIndex >= maxScrollWidth.current
+          );
+        }
+    
+        return false;
+      };
+
+Whilst the `movePrev` and `moveNext` click handlers will take care of actually triggering a scroll (or not), our users won't get any visual cues that they can or can't actually scroll. That's where our `isDisabled` function comes in. 
+
+On each render and rerender of the component, the buttons call out to the `isDisabled` function to see if their `disabled` attribute should be true, or false. 
+
+It accepts a `direction` argument and checks that first. You'll see that the conditional statements are very similar to the `movePrev` and `moveNext` ones. If we can't scroll left (previous) anymore, then it'll return _true_ so that the button is disabled. Likewise, if we can't scroll right (next) anymore we'll also return _true_ so the next button is disabled. 
+
+Failing all else, we'll just return _false_ so that the buttons aren't disabled should the execution fall past our 'if' statements.
+
+If a button is disabled, then Tailwind's `disabled:` styles will kick in and the user will find it much more obvious as to what they can and can't do.
+
+Onto the part that makes the magic happen, the first `useEffect` Hook:
+
+    useEffect(() => {
+        if (carousel !== null && carousel.current !== null) {
+          carousel.current.scrollLeft = carousel.current.offsetWidth * currentIndex;
+        }
+      }, [currentIndex]);
+
+It's a deceptively simple little function that powers the scrolling of the carousel. The Hook accepts an array of dependencies that cause the code inside the Hook to fire when any of their values change. 
+
+In our case, we've added the `currentIndex` value as a dependency. So, when this value changes, say when we press the next or prev buttons, the code inside will run.
+
+[![](/img/react-course-cta.png)](https://www.newline.co/courses/beginners-guide-to-real-world-react "Learn React with The Beginner's Guide to Real World React")
+
+The first thing that happens is a null check to make sure that we've actually got a reference to the underlying carousel `div` element from our `useRef` Hook. 
+
+If we do, then we simply update the carousel's `scrollLeft` value to the carousel's currently visible width multiplied by the current index or page or _slice_ of the content that we want to see. 
+
+> As a simplified example of the maths involved here think of it like this...
+>
+> If we have 10 items in our carousel each being 100 pixels wide, then we have a total scrollable width of 1000 pixels (10 items x 100 px). 
+>
+> However, because of the size of screen, the _visible_ width of the carousel if 250 pixels (remember, all the overflow is hidden by the CSS). This means we'll only be able to see two and a half items at any one time. 
+>
+> If we start from the initial view, 0 scroll left position, when we click 'next', the current index will be bumped up to '1'. 
+>
+> Now, we need to scroll the visible content `currentIndex` times the currently visible content width (1 x 250 px). Our carousel's new `scrollLeft` value will become 250 px and the carousel's contents will scroll over.
+
+This will cause the contents of the carousel to scroll to the left and because of the smooth scroll and snap classes provided us by Tailwind, this happens nice and smoothly with a satisfying little 'snap' animation. Pretty neat!
+
+There's just one last thing to take care of and that's a `useEffect` that fires on component render:
+
+    useEffect(() => {
+        maxScrollWidth.current = carousel.current
+          ? carousel.current.scrollWidth - carousel.current.offsetWidth
+          : 0;
+      }, []);
+
+We're passing in an empty array here, so this Hook only fires once, on the first component render. Its sole purpose is to get the carousel element's total scrollable content width _minus_ the currently visible offset width value, and store this value in the `maxScrollWidth` ref value. 
+
+This will give us the bounding boxes that allow us to work out how much to scroll, how many times we can scroll before we run out of road, and help make the magic happen. 
 
 ## The final multi-item carousel component
 
