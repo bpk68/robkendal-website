@@ -397,6 +397,41 @@ And finally, we'll look at the main carousel item loop:
 
 With our final JSX, we start with some classes that hide the overflow of any child items, display child items using flexbox, provide a basic gap between carousel items, and then add a bunch of scroll snap styles using [Tailwind's handy scroll-snap](https://tailwindcss.com/docs/scroll-snap-type) facilities.
 
+The scroll snap stuff isn't 100% necessary but it's recommended as it adds a nice little feel to how each item _snaps_ into place when scrolled left to right, and helps prevent the scroll ending up weird half-way place between image items.
+
+Next up we have a classic React pattern of looping through some sort of array with the `.map()` function and spitting out some repeated JSX for each iteration. 
+
+For each resource item we produce the following JSX:
+
+    <div
+      key={index}
+      className="carousel-item text-center relative w-64 h-64 snap-start"
+    >
+    	<a
+    	  href={resource.link}
+    	  className="h-full w-full aspect-square block bg-origin-padding bg-left-top bg-cover bg-no-repeat z-0"
+    	  style={{ backgroundImage: `url(${resource.imageUrl || ''})` }}
+    	>
+    		<img
+    		  src={resource.imageUrl || ''}
+    		  alt={resource.title}
+    		  className="w-full aspect-square hidden"
+    		/>
+    	</a>
+    	<a
+    	  href={resource.link}
+    	  className="h-full w-full aspect-square block absolute top-0 left-0 transition-opacity duration-300 opacity-0 hover:opacity-100 bg-blue-800/75 z-10"
+    	>
+    		<h3 className="text-white py-6 px-3 mx-auto text-xl">
+    			{resource.title}
+    		</h3>
+    	</a>
+    </div>
+
+Which is what we saw in the early part of the article but with the Tailwind classes back in. What's happening here is that we have two blocks for each resource item. 
+
+The first block has a forced square width and height as well as centering any text. Inside of this we have a link and an image. We're using an image-hiding pattern here that aids accessibility whilst giving us a tip-top UI. The image is given a `src` property and an alt tag, but is visually hidden from display. This allows screen readers to _see_ the image but handles situations where the 
+
 ### The carousel logic
 
 ## The final multi-item carousel component
