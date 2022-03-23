@@ -100,7 +100,7 @@ const ContactForm = ({
         <div className="control">
           <input
             id="txtDiscovery"
-            name="name"
+            name="txtDiscovery"
             className="input"
             type="text"
             placeholder={`Through a google search for 'awesome developers in XYZ'`}
