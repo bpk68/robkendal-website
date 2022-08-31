@@ -6,10 +6,10 @@ import Layout from '../components/Layout';
 const RecruiterFaq = () => {
   return (
     <Layout
-      title='Recruitment FAQ | Rob Kendal, freelance developer'
-      description='Answers to the most frequently asked questions I get from recruiters'
+      title="Recruitment FAQ | Rob Kendal, freelance developer"
+      description="Answers to the most frequently asked questions I get from recruiters"
     >
-      <div className='container'>
+      <div className="container">
         <h1>FAQ for recruiters</h1>
         <p>
           Well hello there. If you've found me via a social network or have
@@ -30,19 +30,19 @@ const RecruiterFaq = () => {
 
         <ul>
           <li>
-            <a href=' https://www.visualcv.com/rob-kendal-freelancer/'>
+            <a href=" https://www.visualcv.com/rob-kendal-freelancer/">
               My up to date CV
             </a>{' '}
             – made with Visual CV.
           </li>
           <li>
-            <a href='https://www.linkedin.com/in/robkendal/'>
+            <a href="https://www.linkedin.com/in/robkendal/">
               My LinkedIn profile
             </a>
           </li>
           <li>
             My email address,{' '}
-            <a href='mailto:me@robkendal.co.uk'>me[at]robkendal.co.uk</a> or <a href='mailto:rob@ark-labs.co.uk'>rob[at]ark-labs.co.uk</a> (my business address).
+            <a href="mailto:rob@ark-labs.co.uk">rob[at]ark-labs.co.uk</a>.
           </li>
         </ul>
 
@@ -51,8 +51,9 @@ const RecruiterFaq = () => {
         <p>Yep.</p>
 
         <p>
-          I am able to take on contract and software development consultancy roles alongside my freelance work as a {' '}
-          <Link href='/freelance-shopify-developer'>
+          I am able to take on software development consultancy and contract
+          roles alongside my freelance work as a{' '}
+          <Link href="/freelance-shopify-developer">
             <a>freelance Shopify consultant</a>
           </Link>
           .
@@ -68,64 +69,77 @@ const RecruiterFaq = () => {
 
         <ul>
           <li>
-            Working with modern technologies and approaches to problem-solving
+            Working with modern technologies and approaches to problem-solving.
           </li>
-          <li>Contract or short-term consultancy roles</li>
+          <li>Contract or short-term consultancy roles.</li>
           <li>
             Strong team unity with opportunities to learn, grow, and support
-            each other
+            each other.
           </li>
-          <li>Agile development environments</li>
+          <li>Agile development environments.</li>
           <li>
             Independence and empowerment to tackle problems with a level of
-            autonomy
+            autonomy.
           </li>
-          <li>High levels of trust in employees</li>
-          <li>Flexible hours</li>
-          <li>Remote working conditions</li>
+          <li>High levels of trust in employees.</li>
+          <li>Flexible hours.</li>
+          <li>Remote working conditions.</li>
           <li>
-            Work-life balance. 40 hours (and less) is more than enough time to devote to a
-            working week.
+            Work-life balance. 40 hours (and less) is more than enough time to
+            devote to a working week.
           </li>
         </ul>
 
         <p>
           As a slightly more concrete example of a really ace company that's
           nailed the culture, check out{' '}
-          <a href='https://www.hubspot.com/jobs'>Hubspot's careers page</a>{' '}
+          <a href="https://www.hubspot.com/jobs">Hubspot's careers page</a>{' '}
           where they even have their own culture code.
         </p>
 
         <h2>Do you have a preferred technology stack?</h2>
 
         <p>
-          Most of my work now is in frontend technologies, largely based in
-          JavaScript. My current, general tech stack looks like this:
+          Most of my work now is in fullstack frontend technologies, largely
+          based in JavaScript. My current, general tech stack looks like this:
         </p>
 
         <ul>
-          <li>JAMstack (JavaScript, API's, Markup)</li>
-          <li>React (or Vue)</li>
-          <li>ES6/7 JavaScript</li>
-          <li>Next.js</li>
-          <li>React.js</li>
+          <li>JAMstack (JavaScript, API's, Markup).</li>
+          <li>React (or Vue).</li>
+          <li>JavaScript (comfortable with all the latest versions in use).</li>
+          <li>Next JS and Gatsby.</li>
           <li>
-            CSS – both vanilla and preprocessors (SASS) using modern layouts,
-            such as grid or flexbox
+            CSS, both vanilla and preprocessors (SASS) using modern layouts,
+            such as grid or flexbox.
           </li>
-          <li>CSS frameworks such as Bulma, Foundation, Bootstrap, Tailwind</li>
-          <li>Bundlers such as Webpack or Parcel</li>
-          <li>Accessible, semantic HTML</li>
+          <li>
+            CSS frameworks, especially Tailwind CSS and others based on this
+            popular utility framework like Chakra UI. I also have skills in
+            others such as Bulma, Foundation, and Bootstrap.
+          </li>
+          <li>
+            Code bundlers and transpilers such as Babel, Webpack, Vite or
+            Parcel.
+          </li>
+          <li>
+            Headless CMS setups such as Contentful, Netlify CMS, or even
+            WordPress.
+          </li>
+          <li>Accessible, semantic HTML.</li>
+          <li>No SQL databases, such as Mongo, Supabase, or AWS Dynamo DB.</li>
+          <li>GraphQL.</li>
         </ul>
 
         <h2>What sort of experience do you have?</h2>
 
         <p>
-          I've been in the IT industry for over 15 years, most of that as a
-          developer. I started in full stack development using the Microsoft
-          (MS) tech stack of C#, ASP.Net 2.0. In more recent years, I have been
-          a senior frontend developer specialising in performant websites using
-          the latest JavaScript and frameworks, such as React and Vue.
+          I've been in the IT industry for close to 20 years, most of that as a
+          software engineer and web developer. I started in full stack
+          development using the Microsoft (MS) tech stack of C# and ASP.Net. In
+          more recent years, I have been a senior/lead frontend developer
+          specialising in performant websites using the latest JavaScript and
+          frameworks, such as React and Vue.
         </p>
 
         <p>
@@ -135,24 +149,32 @@ const RecruiterFaq = () => {
 
         <ul>
           <li>
-            <a href='https://robkendal.co.uk/about/'>About me page</a>
+            <a href="https://robkendal.co.uk/about/">About me page</a>.
           </li>
           <li>
-            <a href='https://www.visualcv.com/rob-kendal-freelancer/'>My Visual CV</a>
+            <a href="https://www.visualcv.com/rob-kendal-freelancer/">
+              My Visual CV
+            </a>
+            .
           </li>
           <li>
-            <a href='https://www.linkedin.com/in/robkendal/'>
+            <a href="https://www.linkedin.com/in/robkendal/">
               My LinkedIn profile
             </a>
+            .
           </li>
         </ul>
 
         <h2>What are your consultancy rates?</h2>
 
-        <p>Culture and project fit are a big deal and will always come above day rates.</p>
+        <p>
+          Culture and project fit are a big deal and will always come above day
+          rates.
+        </p>
 
         <p>
-          That said, I have previously worked on a consultancy day rate between &pound;450 + VAT and &pound;600 + VAT.
+          That said, I have previously worked on a consultancy day rate between
+          &pound;500 + VAT and &pound;600 + VAT.
         </p>
 
         <h2>Are you willing to relocate for the right role?</h2>
@@ -162,20 +184,24 @@ const RecruiterFaq = () => {
         <h2>What sort of locations are you able to work in?</h2>
 
         <p>
-          Living in <strong>Selby, North Yorkshire</strong>, I'm happy for very occasional travel to within 30-40 mins of my home:
+          I'm happy and at my most productive when working in my fully kitted
+          out home office in a remote environment. That said, living in{' '}
+          <strong>Selby, North Yorkshire</strong>, I'm OK with very minimal,
+          occasional travel within 30-40 mins of my home:
         </p>
 
         <p>(In preferential order)</p>
 
         <ul>
-          <li>Selby</li>
-          <li>York</li>
-          <li>Leeds</li>
-          <li>Beverley and Hull</li>
+          <li>Selby.</li>
+          <li>York.</li>
+          <li>Leeds.</li>
+          <li>Beverley and Hull.</li>
         </ul>
 
         <p>
-          Of course, fully remote options are the future and I've been fully remote for well over 3 years :)
+          Of course, fully remote options are the future and I've been fully
+          remote for well over 5 years :)
         </p>
 
         <h2>I've come across your CV on 'XYZ' can we have a quick call?</h2>
@@ -201,8 +227,8 @@ const RecruiterFaq = () => {
             me an email which includes the following information:
           </li>
           <ul>
-            <li>The job spec</li>
-            <li>Rates and project information</li>
+            <li>The job spec.</li>
+            <li>Rates and project information.</li>
             <li>
               <strong>A subject line of 'React is ace!'</strong> so that I know
               you've made it this far onto the page. You will always get a reply
@@ -216,7 +242,7 @@ const RecruiterFaq = () => {
         <p>
           I could, but you can always view the latest, most up to date version
           of my CV on{' '}
-          <a href='https://www.visualcv.com/rob-kendal-freelancer/'>
+          <a href="https://www.visualcv.com/rob-kendal-freelancer/">
             my Visual CV page
           </a>
           .
@@ -226,7 +252,7 @@ const RecruiterFaq = () => {
 
         <p>
           Alternatively,{' '}
-          <a href='https://www.linkedin.com/in/robkendal/'>
+          <a href="https://www.linkedin.com/in/robkendal/">
             my LinkedIn profile
           </a>{' '}
           is always kept as a living experience document so that it matches my
@@ -237,7 +263,7 @@ const RecruiterFaq = () => {
 
         <p>
           Again, you can download a PDF version of my CV from{' '}
-          <a href='https://www.visualcv.com/rob-kendal-freelancer/'>
+          <a href="https://www.visualcv.com/rob-kendal-freelancer/">
             my Visual CV page
           </a>
           .
@@ -256,7 +282,11 @@ const RecruiterFaq = () => {
 
         <h2>What is your notice period?</h2>
 
-        <p>It depends on if I'm currently working on several large-scale projects or within a contract position at the moment. If you drop me a line I'll be happy to update you on my current situation.</p>
+        <p>
+          It depends on if I'm currently working on several large-scale projects
+          or within a contract position at the moment. If you drop me a line
+          I'll be happy to update you on my current situation.
+        </p>
       </div>
     </Layout>
   );
