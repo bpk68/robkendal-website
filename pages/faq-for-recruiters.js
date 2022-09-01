@@ -173,8 +173,14 @@ const RecruiterFaq = () => {
         </p>
 
         <p>
-          That said, I have previously worked on a consultancy day rate between
-          &pound;500 + VAT and &pound;600 + VAT.
+          That said, it's difficult to give an exact rate because it really
+          depends on the type of project and its requirements. For example, a
+          tech lead position is always going to command more than a senior
+          developer one.
+        </p>
+        <p>
+          There's always going to be some flexibility, so let's discuss the
+          project and go from there :)
         </p>
 
         <h2>Are you willing to relocate for the right role?</h2>
