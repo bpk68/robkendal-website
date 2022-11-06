@@ -11,6 +11,14 @@ const SocialLinks = ({ overrideStyles }) => (
       <span className='screen-reader-text'>Follow me on Twitter</span>
     </a>
     <a
+      href='https://indieweb.social/@kendalmintcode'
+      target='_blank'
+      rel='noreferrer noopener me'
+    >
+      <span className='fab fa-mastodon' aria-hidden='true'></span>
+      <span className='screen-reader-text'>Follow me on Mastodon</span>
+    </a>
+    <a
       href='https://github.com/bpk68/'
       target='_blank'
       rel='noreferrer noopener me'
