@@ -114,7 +114,7 @@ That said, by promoting systems like GitHub's graph can feed into this and creat
 
 I should point out that your success is your success. You should never apologise for it, nor shy away from shouting about it. But I think it's helpful to be mindful about how others can perceive these and how it can affect them.
 
-[![twitter banner call to action](/img/twitter_cta.png)](http://twitter.com/kendalmintcode)
+[![Follow me on Mastodon @kendalmintcode@indieweb.social](/img/mastodon_cta.png)](https://indieweb.social/@kendalmintcode)
 
 ## Is the graph any good at all?
 

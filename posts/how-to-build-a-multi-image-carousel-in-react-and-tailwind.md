@@ -81,8 +81,8 @@ The main point here is that we're pulling data in to use where we have things li
 {
   "resources": [
     {
-      "title": "Find me on Twitter",
-      "link": "https://twitter.com/kendalmintcode",
+      "title": "Find me on Mastodon",
+      "link": "https://indieweb.social/@kendalmintcode",
       "imageUrl": "https://placeimg.com/300/300/any"
     },
     {
@@ -92,7 +92,7 @@ The main point here is that we're pulling data in to use where we have things li
     },
     {
       "title": "Some sort of third title",
-      "link": "https://twitter.com/kendalmintcode",
+      "link": "https://indieweb.social/@kendalmintcode",
       "imageUrl": "https://placeimg.com/300/300/architecture"
     },
 
@@ -100,7 +100,7 @@ The main point here is that we're pulling data in to use where we have things li
 
     {
       "title": "Super item number the last",
-      "link": "https://twitter.com/kendalmintcode",
+      "link": "https://indieweb.social/@kendalmintcode",
       "imageUrl": "https://placeimg.com/300/300/tech"
     }
   ]

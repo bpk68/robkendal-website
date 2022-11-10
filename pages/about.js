@@ -7,11 +7,11 @@ import ContactForm from '../components/ContactForm';
 
 const About = () => (
   <Layout
-    title='About Rob Kendal, freelance web developer'
+    title="About Rob Kendal, freelance web developer"
     description="I'm Rob Kendal, a freelance web developer specialising in WordPress and headless CMS web development. I work with clients remotely from my home office in Selby, North Yorkshire"
   >
-    <h1 className='has-text-centered'>About Rob Kendal</h1>
-    <div className='container'>
+    <h1 className="has-text-centered">About Rob Kendal</h1>
+    <div className="container">
       <p>
         I've been fortunate enough to have discovered computers during their
         golden beginnings when I was young. Although I liked maths and science,
@@ -26,8 +26,8 @@ const About = () => (
       </p>
       <figure>
         <img
-          src='/img/DwTTAP8X0AACBD9.jpg'
-          alt='Young Rob Kendal sitting at a BBC computer'
+          src="/img/DwTTAP8X0AACBD9.jpg"
+          alt="Young Rob Kendal sitting at a BBC computer"
         />
         <figcaption>
           Me killing it on a BBC computer with a great 80's haircut :)
@@ -47,9 +47,9 @@ const About = () => (
         and developers in digital agencies, I was introduced to WordPress
         through a very talented graphic designer friend of mine who runs{' '}
         <a
-          href='https://www.createdfor.co.uk'
-          target='_blank'
-          rel='noopener noreferrer'
+          href="https://www.createdfor.co.uk"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           CreatedFor
         </a>
@@ -78,16 +78,19 @@ const About = () => (
       <p>
         I like to write and to document my knowledge right out in the open. I do
         this through publishing regular{' '}
-        <Link href='/blog'>
+        <Link href="/blog">
           <a>articles on my blog</a>
         </Link>{' '}
         and being an active member of the{' '}
-        <a href='https://twitter.com/kendalmintcode'>Twitter tech community</a>.
+        <a href="https://indieweb.social/@kendalmintcode">
+          Indie Web tech community on Mastodon
+        </a>
+        .
       </p>
       <p>
         I help give back to the development community by providing support,
         advice and guidance to aspiring developers through{' '}
-        <Link href='/mentorship'>
+        <Link href="/mentorship">
           <a>my mentorship program</a>
         </Link>
         .
@@ -96,17 +99,17 @@ const About = () => (
       <p>
         You can listen to the web development podcast I run called &nbsp;
         <a
-          href='https://thefrontendpodcast.site'
-          target='_blank'
-          rel='noopener noreferrer'
+          href="https://thefrontendpodcast.site"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           The Front End
         </a>
         &nbsp; which is available on &nbsp;
         <a
-          href='https://anchor.fm/the-front-end'
-          target='_blank'
-          rel='noopener noreferrer'
+          href="https://anchor.fm/the-front-end"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Anchor podcasts
         </a>
@@ -114,7 +117,7 @@ const About = () => (
       </p>
       <p>
         When I'm not recording a podcast,{' '}
-        <Link href='/wordpress-consultancy'>
+        <Link href="/wordpress-consultancy">
           <a>offering web development consultancy services</a>
         </Link>{' '}
         or coding something exciting, then you'll find me right at home in the
@@ -124,7 +127,7 @@ const About = () => (
       <h2>Connect with me</h2>
       <SocialLinks />
       <h2>Hire me</h2>
-      <ContactForm action='/contact/thanks' />
+      <ContactForm action="/contact/thanks" />
     </div>
   </Layout>
 );

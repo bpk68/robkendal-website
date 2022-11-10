@@ -6,7 +6,7 @@ description:
   If you've been asking 'How do I fix the "Property does not exist on type Window in TypeScript" error?'
   then this is the article for you. We'll fix the property does not exist on type Window error
   once and for all.
-featuredimage: "/img/property-does-not-exist-on-window-blog-header.png"
+featuredimage: '/img/property-does-not-exist-on-window-blog-header.png'
 featured: true
 tags:
   - Tutorial
@@ -14,7 +14,7 @@ tags:
   - TypeScript
 ---
 
-![Blog header image for how to fix property does not exist on Window article](/img/property-does-not-exist-on-window-blog-header.png "Blog header image for how to fix property does not exist on Window article")
+![Blog header image for how to fix property does not exist on Window article](/img/property-does-not-exist-on-window-blog-header.png 'Blog header image for how to fix property does not exist on Window article')
 
 If you've been doing something with an external library, global variable or anything that involved the native `Window` object in TypeScript, you may have come across this error:
 
@@ -43,7 +43,7 @@ Cloudinary added it's own `cloudinary` object to the global `window` object prov
 
 This is one of those cases where the error is actually pointing us in the right direction.
 
-[![twitter banner call to action](/img/twitter_cta.png)](http://twitter.com/kendalmintcode)
+[![Follow me on Mastodon @kendalmintcode@indieweb.social](/img/mastodon_cta.png)](https://indieweb.social/@kendalmintcode)
 
 ## Fixing the 'Property does not exist on type Window in TypeScript' error
 

@@ -20,7 +20,7 @@ In [part one of using WordPress as a headless CMS with Next.js](https://robkenda
 
 For part two in the series, we're going to take those starting bases and connect the dots to supply content data from WordPress via the WPGraphQL plugin and access it in our Next.js project.
 
-_If you like this article, you'll love the other helpful content I post on Twitter._ [_Find me on Twitter @kendalmintcode_](https://twitter.com/kendalmintcode 'Find me on Twitter @kendalmintcode') _and say hi._
+_If you like this article, you'll love the other helpful content I post on Mastodon._ [_Follow me on Mastodon @kendalmintcode@indieweb.social_](https://indieweb.social/@kendalmintcode 'Find me on Mastodon @kendalmintcode@indieweb.social') _and say hi._
 
 ## Cleaning up the new Next.js project
 
@@ -82,7 +82,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>Create Next App</title>
-        <link rel='icon' href='/favicon.ico' />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
@@ -90,7 +90,7 @@ export default function Home() {
 
         <p>
           You can find more articles on the{' '}
-          <Link href='/blog'>
+          <Link href="/blog">
             <a>blog articles page</a>
           </Link>
         </p>
@@ -98,12 +98,12 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <a
-          href='https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
-          target='_blank'
-          rel='noopener noreferrer'
+          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           Powered by{' '}
-          <img src='/vercel.svg' alt='Vercel Logo' className={styles.logo} />
+          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
       </footer>
     </div>
@@ -194,7 +194,7 @@ async function fetchAPI(query, { variables } = {}) {
   const res = await fetch(API_URL, {
     method: 'POST',
     headers,
-    body: JSON.stringify({ query, variables })
+    body: JSON.stringify({ query, variables }),
   });
 
   // error handling work
@@ -286,7 +286,8 @@ export async function getAllPostsWithSlug() {
         }
       }
     }
-  `);
+  `
+  );
   return data?.posts;
 }
 ```
@@ -324,8 +325,8 @@ export async function getPost(slug) {
     {
       variables: {
         id: slug,
-        idType: 'SLUG'
-      }
+        idType: 'SLUG',
+      },
     }
   );
 
@@ -353,7 +354,7 @@ fragment PostFields on Post {
   }
 }
 //...rest of query
-`
+`;
 ```
 
 GraphQL fragments give us the ability to break larger, more complex queries into smaller, reusable parts.
@@ -370,7 +371,7 @@ query PostBySlug($id: ID!, $idType: PostIdType!) {
     content
   }
 }
-`
+`;
 ```
 
 Notice the `...PostFields` fragment that we've referenced. You could also remove the fragment and define the query like this:
@@ -391,7 +392,7 @@ query PostBySlug($id: ID!, $idType: PostIdType!) {
     content
   }
 }
-`
+`;
 ```
 
 ### GraphQL variables
@@ -409,12 +410,12 @@ query PostBySlug($id: ID!, $idType: PostIdType!) {
     }
   }
 `,
-{
-  variables: {
-    id: slug,
-    idType: 'SLUG'
-  }
-};
+  {
+    variables: {
+      id: slug,
+      idType: 'SLUG',
+    },
+  };
 ```
 
 You can see the GraphQL variables defined with a '\$' dollar symbol. In the first line, `query PostBySlug($id: ID!, $idType: PostIdType!)` we're defining our query name and the variables we'll be passing in, and their types.
@@ -458,7 +459,7 @@ const Blog = ({ allPosts: { edges } }) => (
   <div className={styles.container}>
     <Head>
       <title>Blog articles page</title>
-      <link rel='icon' href='/favicon.ico' />
+      <link rel="icon" href="/favicon.ico" />
     </Head>
 
     <main className={styles.main}>
@@ -544,7 +545,7 @@ Knowing this information, it becomes easier to pull out the relevant bits of con
         </Link>
       </div>
     </div>
-  ))
+  ));
 }
 ```
 
@@ -669,8 +670,8 @@ export async function getStaticProps() {
   const allPosts = await getAllPosts();
   return {
     props: {
-      allPosts
-    }
+      allPosts,
+    },
   };
 }
 ```
@@ -720,7 +721,7 @@ However, with our blog detail page (i.e. the one that will handle the individual
 
 That's where _dynamic routing_ comes in with Next.js. We've already seen what that looks like earlier in this very article, and I'd recommend reviewing the [excellent documentation on dynamic routing](https://nextjs.org/docs/routing/dynamic-routes 'Dynamic routing documentation from the Next.js website') from Next.js themselves.
 
-[![Follow kendalmintcode on twitter call to action image](/img/twitter_cta.png)](https://twitter.com/kendalmintcode)
+[![Follow me on Mastodon @kendalmintcode@indieweb.social call to action image](/img/mastodon_cta.png)](https://indieweb.social/@kendalmintcode)
 
 ### The basic process for dynamic routing
 
@@ -756,7 +757,7 @@ export default function Post({ postData }) {
     return <p>hmm...looks like an error</p>;
   }
 
-  const formatDate = date => {
+  const formatDate = (date) => {
     const newDate = new Date(date);
 
     return `${newDate.getDate()}/${
@@ -768,7 +769,7 @@ export default function Post({ postData }) {
     <div className={styles.container}>
       <Head>
         <title>{postData.title}</title>
-        <link rel='icon' href='/favicon.ico' />
+        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
@@ -781,13 +782,13 @@ export default function Post({ postData }) {
               <p>{formatDate(postData.date)}</p>
             </div>
             <div
-              className='post-content content'
+              className="post-content content"
               dangerouslySetInnerHTML={{ __html: postData.content }}
             />
           </article>
         )}
         <p>
-          <Link href='/blog'>
+          <Link href="/blog">
             <a>back to articles</a>
           </Link>
         </p>
@@ -837,7 +838,7 @@ if (!router.isFallback && !postData?.slug) {
   return <p>hmm...looks like an error</p>;
 }
 
-const formatDate = date => {
+const formatDate = (date) => {
   const newDate = new Date(date);
 
   return `${newDate.getDate()}/${
@@ -873,7 +874,7 @@ That's what's going on in this slice of our main component's `return` method:
         <p>{formatDate(postData.date)}</p>
       </div>
       <div
-        className='post-content content'
+        className="post-content content"
         dangerouslySetInnerHTML={{ __html: postData.content }}
       />
     </article>
@@ -895,7 +896,7 @@ export async function getStaticPaths() {
 
   return {
     paths: allPosts.edges.map(({ node }) => `/blog/${node.slug}`) || [],
-    fallback: true
+    fallback: true,
   };
 }
 ```
@@ -920,8 +921,8 @@ export async function getStaticProps({ params }) {
 
   return {
     props: {
-      postData: data.post
-    }
+      postData: data.post,
+    },
   };
 }
 ```
@@ -961,4 +962,4 @@ Coming up next, in part three, we'll be creating an XML RSS feed as part of the 
 
 This is a common feature on just about any blog out there on the web, but it's not as straightforward as you may think when using Next.js. Don't worry though, it's all covered in part three.
 
-_If you like this article, you'll love the other helpful content I post on Twitter._ [_Find me on Twitter @kendalmintcode_](https://twitter.com/kendalmintcode 'Find me on Twitter @kendalmintcode') _and say hi._
+_If you like this article, you'll love the other helpful content I post on Twitter._ [_Follow me on Mastodon @kendalmintcode@indieweb.social_](https://indieweb.social/@kendalmintcode 'Follow me on Mastodon @kendalmintcode@indieweb.social') _and say hi._

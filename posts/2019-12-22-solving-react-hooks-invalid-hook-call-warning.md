@@ -17,6 +17,7 @@ tags:
 - Debugging
 
 ---
+
 ![Blog header for article on invalid hook call warning](/img/fixing-invalid-hooks-warning-blog-header.png)
 
 Recently, I decided to build a [React-based visual query builder](https://github.com/bpk68/react-visual-query-builder) as none of the existing ones out in the wild were doing what I wanted. Awesome: who doesn't love the chance to get their chops around a meaty sort-of-side-project, especially when we'd planned to release it to the open source community?!
@@ -80,7 +81,7 @@ The solution? Stop using Parcel and switch to Webpack (don't worry, I've got a [
 
 (At the time of writing, I'm not convinced that there is a way to use Parcel JS with React in such a way as to create a consumable dependency to push to NPM — prove me wrong comments section!).
 
-[![twitter banner call to action](/img/twitter_cta.png)](http://twitter.com/kendalmintcode)
+[![Follow me on Mastodon @kendalmintcode@indieweb.social](/img/mastodon_cta.png)](https://indieweb.social/@kendalmintcode)
 
 ## Fix the invalid hook call warning using Webpack
 
@@ -131,9 +132,9 @@ So that should see you right. It's worth noting that your consuming project will
 
 Here's a quick summary of the helpful links used throughout this article:
 
-* [Official React hooks error documentation](https://reactjs.org/warnings/invalid-hook-call-warning.html)
-* [The React Query Builder on GitHub](https://github.com/bpk68/react-visual-query-builder)
-* [The React Visual Query Builder on NPM](https://www.npmjs.com/package/react-visual-query-builder)
-* [The Hooks error discussion on GitHub](https://github.com/facebook/react/issues/13991)
-* [My Webpack starter project](https://github.com/bpk68/web-template)
-* [My Parcel JS starter project with React](https://github.com/bpk68/parcel-starter-with-react)
+- [Official React hooks error documentation](https://reactjs.org/warnings/invalid-hook-call-warning.html)
+- [The React Query Builder on GitHub](https://github.com/bpk68/react-visual-query-builder)
+- [The React Visual Query Builder on NPM](https://www.npmjs.com/package/react-visual-query-builder)
+- [The Hooks error discussion on GitHub](https://github.com/facebook/react/issues/13991)
+- [My Webpack starter project](https://github.com/bpk68/web-template)
+- [My Parcel JS starter project with React](https://github.com/bpk68/parcel-starter-with-react)

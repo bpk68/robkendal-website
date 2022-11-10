@@ -50,7 +50,7 @@ The Google Sheets Reader is a simple, one-way data fetcher that allows for _read
 - You don't need access to more advanced functionality (such as caching or OAuth) provided by the [official Google Sheets API](https://developers.google.com/sheets/api/).
 - You want a simple, straightforward means to get data > do things with data > celebrate!
 
-[![twitter banner call to action](/img/twitter_cta.png)](http://twitter.com/kendalmintcode)
+[![Follow me on Mastodon @kendalmintcode@indieweb.social](/img/mastodon_cta.png)](https://indieweb.social/@kendalmintcode)
 
 ### Enough chatter, let me use the Google Sheets Reader!
 
@@ -71,12 +71,12 @@ or, if you prefer Yarn,
 Next, you need to call the reader in your project:
 
 ```javascript
-const reader = require("g-sheets-api");
+const reader = require('g-sheets-api');
 const readerOptions = {
-  sheetId: "1-CmQumuz5ZiOvINhphEMgfplrJacQhD623RROcOBTAg",
+  sheetId: '1-CmQumuz5ZiOvINhphEMgfplrJacQhD623RROcOBTAg',
   returnAllResults: false,
   filter: {
-    "key to filter on": "value to match",
+    'key to filter on': 'value to match',
   },
 };
 

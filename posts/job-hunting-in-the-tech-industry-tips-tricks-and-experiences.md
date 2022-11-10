@@ -10,9 +10,10 @@ description: >-
 tags:
   - Thoughts
 ---
+
 ![Typewriter and stationery](/img/rawpixel-604746-unsplash.jpg)
 
-Having recently been through the job hunting mill, I find that familiar lines of conversation crop up time and again between colleagues, friends and fellow tech people on [Twitter]("https://twitter.com/kendalmintcode") about how to find a job, how you deal with issue 'xyz' and fight the dreaded imposter syndrome and inferiority complexes.
+Having recently been through the job hunting mill, I find that familiar lines of conversation crop up time and again between colleagues, friends and fellow tech people on [Twitter]("https://indieweb.social/@kendalmintcode") about how to find a job, how you deal with issue 'xyz' and fight the dreaded imposter syndrome and inferiority complexes.
 
 So here is my experience of what worked for _me_ distilled into some top tips...
 
@@ -32,16 +33,16 @@ There are a lot of ways to feel like you're just not good enough. But I'm here t
 
 It's all about mindset. Yours needs to be set to 'growth'!
 
-![Fixed vs. growth mindset diagram](/img/mindset-table.png "Credit: image from Train Ugly (https://trainugly.com/mindset-makers-breakers-pt1/)")
+![Fixed vs. growth mindset diagram](/img/mindset-table.png 'Credit: image from Train Ugly (https://trainugly.com/mindset-makers-breakers-pt1/)')
 
 Having a [growth mindset]("https://www.mindsetworks.com/science/") is becoming more and more popular. Essentially it's about flipping your thought patterns and approach in order to learn, improve, and grow; **looking to fill the gaps rather than dwelling on the fact that the gaps exist** - as Homer Simpson would say, 'Crisitunity!'.
 
 When it comes to job hunting, a few helpful mindset shifts might look like this:
 
-* I'm not qualified for the job > _I'll be honest about my experience and let them decide!_
-* I didn't even get an interview > _what can I do differently next time?_
-* I don't know half of those technologies > _I'd love the chance to learn new skills!_
-* They turned me down for the role > _I wasn't the right fit this time._
+- I'm not qualified for the job > _I'll be honest about my experience and let them decide!_
+- I didn't even get an interview > _what can I do differently next time?_
+- I don't know half of those technologies > _I'd love the chance to learn new skills!_
+- They turned me down for the role > _I wasn't the right fit this time._
 
 ### Rejection != failure
 

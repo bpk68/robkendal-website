@@ -130,7 +130,7 @@ This achieves a couple of things:
 
 Now, we can't quite run our server. Since there's nothing defined in our routing file, it's very likely you'll get a `TypeError: require(...) is not a function` error. Not very helpful, but all will be resolved once we add some routes.
 
-[![twitter banner call to action](/img/twitter_cta.png)](http://twitter.com/kendalmintcode)
+[![Follow me on Mastodon @kendalmintcode@indieweb.social](/img/mastodon_cta.png)](http://twitter.com/kendalmintcode)
 
 ## 3\. Building the route handling system
 
@@ -303,7 +303,7 @@ const userRoutes = (app, fs) => {
     filePath = dataPath,
     encoding = 'utf8'
   ) => {
-    fs.writeFile(filePath, fileData, encoding, err => {
+    fs.writeFile(filePath, fileData, encoding, (err) => {
       if (err) {
         throw err;
       }
@@ -315,7 +315,7 @@ const userRoutes = (app, fs) => {
   // READ
   // Notice how we can make this 'read' operation much more simple now.
   app.get('/users', (req, res) => {
-    readFile(data => {
+    readFile((data) => {
       res.send(data);
     }, true);
   });
@@ -347,8 +347,8 @@ We'll start with the create part of the CRUD, creating a new user. Add in the fo
 
 // CREATE
 app.post('/users', (req, res) => {
-  readFile(data => {
-    // Note: this needs to be more robust for production use. 
+  readFile((data) => {
+    // Note: this needs to be more robust for production use.
     // e.g. use a UUID or some kind of GUID for a unique ID value.
     const newUserId = Date.now().toString();
 
@@ -366,7 +366,7 @@ app.post('/users', (req, res) => {
 
 It's quite a simple operation here. Note that we've changed the `app` function call to `app.post()` as this is a POST request to the API server. The route remains as `/users` but will hit this method when the request type is a POST.
 
-First, we call our new read method and pass a callback function in. When the file is read and we get a JSON object, `data` back, we need to create a new `user` object. For this, we're using the `Date.now().toString()` command to get the timestamp value for 'now', which will be unique enough, but for production purposes, you'll want something a little more robust or guaranteed to be unique. 
+First, we call our new read method and pass a callback function in. When the file is read and we get a JSON object, `data` back, we need to create a new `user` object. For this, we're using the `Date.now().toString()` command to get the timestamp value for 'now', which will be unique enough, but for production purposes, you'll want something a little more robust or guaranteed to be unique.
 
 Next, we add the new user, `req.body` to the users object using the new user ID we created – note that you may need to wrap this in `JSON.parse` to coerce the incoming request body into a format we can read and add to our current data. This will depend on how you're calling the API and supplying data to it.
 
@@ -383,7 +383,7 @@ Here's our update function:
 ```javascript
 // UPDATE
 app.put('/users/:id', (req, res) => {
-  readFile(data => {
+  readFile((data) => {
     // add the new user
     const userId = req.params['id'];
     data[userId] = req.body;
@@ -408,7 +408,7 @@ To round things off, here is our delete function:
 ```javascript
 // DELETE
 app.delete('/users/:id', (req, res) => {
-  readFile(data => {
+  readFile((data) => {
     // add the new user
     const userId = req.params['id'];
     delete data[userId];

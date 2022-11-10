@@ -60,7 +60,7 @@ Enjoy the list and please give it a share if you think anyone else will find the
 - [Netlify](https://www.netlify.com/) - this very blog (well, if you're not viewing it on Dev) is hosted on Netlify. Netlify is a hosting service that's aimed at JAM Stack apps. It offers a really empowering developer experience with lots of plugins and integrations to allow you to host all sorts of online applications from SPA's to websites and more.
 - [Postwoman](https://postwoman.io/) - now I'm a big fan of Postman for testing my API's out, but Postwoman offers a superb alternative. Online based, open source and with a ton of options, it's a must to check out.
 
-[![Follow kendalmintcode on twitter call to action image](/img/twitter_cta.png)](https://twitter.com/kendalmintcode)
+[![Follow me on Mastodon @kendalmintcode@indieweb.social call to action image](/img/mastodon_cta.png)](https://indieweb.social/@kendalmintcode)
 
 ## JavaScript
 
