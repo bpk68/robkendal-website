@@ -1,3 +1,6 @@
+
+> Note: this website has been archived and deprecated in favour of my new website template using Astro available at [https://github.com/bpk68/robkendal-website-astro](https://github.com/bpk68/robkendal-website-astro)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
